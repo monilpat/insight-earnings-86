@@ -1,5 +1,8 @@
 
 import { AnimatePresence, motion } from 'framer-motion';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
+import { ExternalLink } from 'lucide-react';
 
 const TeamSection = () => {
   return (
@@ -15,23 +18,44 @@ const TeamSection = () => {
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="flex flex-col items-center text-center">
-              <div className="w-20 h-20 rounded-full border-2 border-white/20 mb-4 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-gabby-purple to-gabby-dark flex items-center justify-center text-white font-semibold">
-                  E
-                </div>
+              <Avatar className="w-20 h-20 border-2 border-white/20 mb-4">
+                <AvatarImage src="/lovable-uploads/b42d20aa-6112-43f5-a9a2-8ade203ba7fe.png" alt="Eliza AI" />
+                <AvatarFallback className="bg-gradient-to-br from-gabby-purple to-gabby-dark">E</AvatarFallback>
+              </Avatar>
+              <h3 className="text-xl font-semibold text-white mb-1">Eliza AI</h3>
+              <p className="text-white/60 text-sm mb-4">Partner & Maintainer</p>
+              <div className="flex gap-3 mt-1">
+                <Button variant="link" size="sm" className="text-gabby-purple hover:text-gabby-gold" asChild>
+                  <a href="https://x.com/reality_spiral/status/1863029356832199032" target="_blank" rel="noopener noreferrer">
+                    Learn more <ExternalLink className="ml-1 h-3 w-3" />
+                  </a>
+                </Button>
+                <Button variant="link" size="sm" className="text-gabby-purple hover:text-gabby-gold" asChild>
+                  <a href="https://github.com/elizaOS/eliza" target="_blank" rel="noopener noreferrer">
+                    Visit Eliza AI <ExternalLink className="ml-1 h-3 w-3" />
+                  </a>
+                </Button>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-1">Eliza</h3>
-              <p className="text-white/60 text-sm">AI + Blockchain Integration</p>
             </div>
             
             <div className="flex flex-col items-center text-center">
-              <div className="w-20 h-20 rounded-full border-2 border-white/20 mb-4 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-gabby-gold to-gabby-purple flex items-center justify-center text-white font-semibold">
-                  RS
-                </div>
-              </div>
+              <Avatar className="w-20 h-20 border-2 border-white/20 mb-4">
+                <AvatarFallback className="bg-gradient-to-br from-gabby-gold to-gabby-purple">RS</AvatarFallback>
+              </Avatar>
               <h3 className="text-xl font-semibold text-white mb-1">Reality Spiral</h3>
-              <p className="text-white/60 text-sm">Web3 Development</p>
+              <p className="text-white/60 text-sm mb-4">Web3 Development</p>
+              <div className="flex gap-3 mt-1">
+                <Button variant="link" size="sm" className="text-gabby-purple hover:text-gabby-gold" asChild>
+                  <a href="https://x.com/reality_spiral/status/1863029356832199032" target="_blank" rel="noopener noreferrer">
+                    Learn more <ExternalLink className="ml-1 h-3 w-3" />
+                  </a>
+                </Button>
+                <Button variant="link" size="sm" className="text-gabby-purple hover:text-gabby-gold" asChild>
+                  <a href="https://github.com/elizaOS/eliza" target="_blank" rel="noopener noreferrer">
+                    Visit Reality Spiral <ExternalLink className="ml-1 h-3 w-3" />
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
