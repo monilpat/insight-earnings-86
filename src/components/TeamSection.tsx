@@ -1,12 +1,9 @@
-
 import { AnimatePresence, motion } from 'framer-motion';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { ExternalLink } from 'lucide-react';
-
 const TeamSection = () => {
-  return (
-    <section className="section-container">
+  return <section className="section-container">
       <div className="max-w-5xl mx-auto">
         <div className="glass-card p-10 md:p-16">
           <div className="text-center mb-10">
@@ -22,7 +19,7 @@ const TeamSection = () => {
                 <AvatarImage src="/lovable-uploads/b42d20aa-6112-43f5-a9a2-8ade203ba7fe.png" alt="Eliza AI" />
                 <AvatarFallback className="bg-gradient-to-br from-gabby-purple to-gabby-dark">E</AvatarFallback>
               </Avatar>
-              <h3 className="text-xl font-semibold text-white mb-1">Eliza AI</h3>
+              <h3 className="text-xl font-semibold text-white mb-1">Eliza</h3>
               <p className="text-white/60 text-sm mb-4">Partner & Maintainer</p>
               <div className="flex gap-3 mt-1">
                 <Button variant="link" size="sm" className="text-gabby-purple hover:text-gabby-gold" asChild>
@@ -43,7 +40,7 @@ const TeamSection = () => {
                 <AvatarFallback className="bg-gradient-to-br from-gabby-gold to-gabby-purple">RS</AvatarFallback>
               </Avatar>
               <h3 className="text-xl font-semibold text-white mb-1">Reality Spiral</h3>
-              <p className="text-white/60 text-sm mb-4">Web3 Development</p>
+              <p className="text-white/60 text-sm mb-4">Agent Ecosystem</p>
               <div className="flex gap-3 mt-1">
                 <Button variant="link" size="sm" className="text-gabby-purple hover:text-gabby-gold" asChild>
                   <a href="https://x.com/reality_spiral/status/1863029356832199032" target="_blank" rel="noopener noreferrer">
@@ -60,8 +57,6 @@ const TeamSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default TeamSection;
