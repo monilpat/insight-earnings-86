@@ -81,7 +81,7 @@ const FeatureSection = () => {
             ))}
           </div>
           
-          {/* Right side - Feature visuals - Using simplest approach with static, direct img tags */}
+          {/* Right side - Feature visuals */}
           <div className="relative h-[400px] glass-card rounded-2xl p-6 overflow-hidden">
             {/* Image 1 - Gabby with coin */}
             <div 
@@ -90,7 +90,7 @@ const FeatureSection = () => {
               }`}
             >
               <img 
-                src="https://lovable-uploads.s3.amazonaws.com/7ab44eed-d640-40ef-8592-949715fc3864.png" 
+                src="/lovable-uploads/df0e6c04-737c-4682-908d-2b32aa085c9e.png" 
                 alt="Actionable Intelligence"
                 className="max-h-full object-contain animate-float"
               />
@@ -103,7 +103,7 @@ const FeatureSection = () => {
               }`}
             >
               <img 
-                src="https://lovable-uploads.s3.amazonaws.com/032f900e-b22c-4522-8081-c1e3657c3798.png" 
+                src="/lovable-uploads/91089426-7545-4c5f-b950-e2e0faefe78f.png" 
                 alt="Earnings Through Engagement"
                 className="max-h-full object-contain animate-float"
               />
@@ -116,7 +116,7 @@ const FeatureSection = () => {
               }`}
             >
               <img 
-                src="https://lovable-uploads.s3.amazonaws.com/fc37ab26-3bcf-42eb-af92-343db6eeb828.png" 
+                src="/lovable-uploads/2264f39d-9dc5-44f3-a95a-3b39bd4cecfb.png" 
                 alt="Secure Monetization"
                 className="max-h-full object-contain animate-float"
               />
