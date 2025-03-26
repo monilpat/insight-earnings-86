@@ -1,9 +1,7 @@
-
 import { AnimatePresence, motion } from 'framer-motion';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { ExternalLink } from 'lucide-react';
-
 const TeamSection = () => {
   return <section className="section-container">
       <div className="max-w-5xl mx-auto">
@@ -45,12 +43,12 @@ const TeamSection = () => {
               <p className="text-white/60 text-sm mb-4">Agent Ecosystem</p>
               <div className="flex gap-3 mt-1">
                 <Button variant="link" size="sm" className="text-gabby-purple hover:text-gabby-gold" asChild>
-                  <a href="https://x.com/reality_spiral" target="_blank" rel="noopener noreferrer">
+                  <a href="https://x.com/reality_spiral/status/1863029356832199032" target="_blank" rel="noopener noreferrer">
                     Learn more <ExternalLink className="ml-1 h-3 w-3" />
                   </a>
                 </Button>
                 <Button variant="link" size="sm" className="text-gabby-purple hover:text-gabby-gold" asChild>
-                  <a href="https://realityspiral.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/elizaOS/eliza" target="_blank" rel="noopener noreferrer">
                     Visit Reality Spiral <ExternalLink className="ml-1 h-3 w-3" />
                   </a>
                 </Button>
@@ -61,5 +59,4 @@ const TeamSection = () => {
       </div>
     </section>;
 };
-
 export default TeamSection;
