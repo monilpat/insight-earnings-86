@@ -91,7 +91,7 @@ const FeatureSection = () => {
                 }`}
               >
                 <img 
-                  src={`/lovable-uploads/${imageUrls[index]}`} 
+                  src={`/lovable-uploads/${gabbyImages[index]}`} 
                   alt={feature.title}
                   className="max-h-full object-contain animate-float"
                 />
@@ -126,10 +126,11 @@ const features: Feature[] = [
   }
 ];
 
-const imageUrls = [
-  "1d399f19-8e1f-43a2-9346-f2ba0c1130fc.png",
-  "6b6db1f8-448c-41b7-a96e-d631a5f9c127.png", 
-  "ae04ed43-ec94-4ab6-bc15-f9a9de63c756.png"
+// Updated Gabby image URLs
+const gabbyImages = [
+  "7ab44eed-d640-40ef-8592-949715fc3864.png", // Gabby with coin
+  "032f900e-b22c-4522-8081-c1e3657c3798.png", // Gabby with cash
+  "fc37ab26-3bcf-42eb-af92-343db6eeb828.png"  // Gabby thinking
 ];
 
 export default FeatureSection;
