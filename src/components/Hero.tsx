@@ -26,15 +26,6 @@ const Hero = () => {
             Turn AI Conversations Into Profits with $GABBY
           </h1>
           
-          {/* Gabby Image - Adding a single image */}
-          <div className="mt-8 flex justify-center animate-fade-in-up" style={{ animationDelay: '0.15s' }}>
-            <img 
-              src="https://lovable-uploads.s3.amazonaws.com/7ab44eed-d640-40ef-8592-949715fc3864.png" 
-              alt="Gabby Mascot"
-              className="h-64 object-contain animate-float"
-            />
-          </div>
-          
           {/* Subheadline */}
           <p className="mt-6 text-xl md:text-2xl text-white/80 font-light animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             Verified insights. Encrypted intelligence. Decentralized profits.
