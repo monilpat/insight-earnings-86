@@ -41,13 +41,6 @@ const FeatureSection = () => {
     }
   }, [isVisible]);
 
-  // Hardcoded image URLs - using direct imports
-  const gabbyImagesSrc = [
-    "https://lovable-uploads.s3.amazonaws.com/7ab44eed-d640-40ef-8592-949715fc3864.png", // Gabby with coin
-    "https://lovable-uploads.s3.amazonaws.com/032f900e-b22c-4522-8081-c1e3657c3798.png", // Gabby with cash
-    "https://lovable-uploads.s3.amazonaws.com/fc37ab26-3bcf-42eb-af92-343db6eeb828.png"  // Gabby thinking
-  ];
-
   return (
     <section id="features" className="section-container bg-gabby-dark/30" ref={featureSectionRef}>
       <div className="max-w-6xl mx-auto">
@@ -88,22 +81,46 @@ const FeatureSection = () => {
             ))}
           </div>
           
-          {/* Right side - Feature visuals */}
+          {/* Right side - Feature visuals - Using simplest approach with static, direct img tags */}
           <div className="relative h-[400px] glass-card rounded-2xl p-6 overflow-hidden">
-            {gabbyImagesSrc.map((imgSrc, index) => (
-              <div 
-                key={index}
-                className={`absolute inset-0 flex items-center justify-center transition-opacity duration-500 ${
-                  activeFeature === index ? 'opacity-100 z-10' : 'opacity-0 z-0'
-                }`}
-              >
-                <img 
-                  src={imgSrc}
-                  alt={features[index].title}
-                  className="max-h-full object-contain animate-float"
-                />
-              </div>
-            ))}
+            {/* Image 1 - Gabby with coin */}
+            <div 
+              className={`absolute inset-0 flex items-center justify-center transition-opacity duration-500 ${
+                activeFeature === 0 ? 'opacity-100 z-10' : 'opacity-0 z-0'
+              }`}
+            >
+              <img 
+                src="https://lovable-uploads.s3.amazonaws.com/7ab44eed-d640-40ef-8592-949715fc3864.png" 
+                alt="Actionable Intelligence"
+                className="max-h-full object-contain animate-float"
+              />
+            </div>
+            
+            {/* Image 2 - Gabby with cash */}
+            <div 
+              className={`absolute inset-0 flex items-center justify-center transition-opacity duration-500 ${
+                activeFeature === 1 ? 'opacity-100 z-10' : 'opacity-0 z-0'
+              }`}
+            >
+              <img 
+                src="https://lovable-uploads.s3.amazonaws.com/032f900e-b22c-4522-8081-c1e3657c3798.png" 
+                alt="Earnings Through Engagement"
+                className="max-h-full object-contain animate-float"
+              />
+            </div>
+            
+            {/* Image 3 - Gabby thinking */}
+            <div 
+              className={`absolute inset-0 flex items-center justify-center transition-opacity duration-500 ${
+                activeFeature === 2 ? 'opacity-100 z-10' : 'opacity-0 z-0'
+              }`}
+            >
+              <img 
+                src="https://lovable-uploads.s3.amazonaws.com/fc37ab26-3bcf-42eb-af92-343db6eeb828.png" 
+                alt="Secure Monetization"
+                className="max-h-full object-contain animate-float"
+              />
+            </div>
             
             {/* Background decoration */}
             <div className="absolute inset-0 bg-gradient-to-br from-gabby-purple/20 to-transparent z-0"></div>
