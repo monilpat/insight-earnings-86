@@ -1,3 +1,4 @@
+
 import { AnimatePresence, motion } from 'framer-motion';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
@@ -37,18 +38,19 @@ const TeamSection = () => {
             
             <div className="flex flex-col items-center text-center">
               <Avatar className="w-20 h-20 border-2 border-white/20 mb-4">
+                <AvatarImage src="/lovable-uploads/3518f2ad-ec1f-4ff2-aaa7-704da1d6919c.png" alt="Reality Spiral" />
                 <AvatarFallback className="bg-gradient-to-br from-gabby-gold to-gabby-purple">RS</AvatarFallback>
               </Avatar>
               <h3 className="text-xl font-semibold text-white mb-1">Reality Spiral</h3>
               <p className="text-white/60 text-sm mb-4">Agent Ecosystem</p>
               <div className="flex gap-3 mt-1">
                 <Button variant="link" size="sm" className="text-gabby-purple hover:text-gabby-gold" asChild>
-                  <a href="https://x.com/reality_spiral/status/1863029356832199032" target="_blank" rel="noopener noreferrer">
+                  <a href="https://x.com/reality_spiral" target="_blank" rel="noopener noreferrer">
                     Learn more <ExternalLink className="ml-1 h-3 w-3" />
                   </a>
                 </Button>
                 <Button variant="link" size="sm" className="text-gabby-purple hover:text-gabby-gold" asChild>
-                  <a href="https://github.com/elizaOS/eliza" target="_blank" rel="noopener noreferrer">
+                  <a href="https://realityspiral.com" target="_blank" rel="noopener noreferrer">
                     Visit Reality Spiral <ExternalLink className="ml-1 h-3 w-3" />
                   </a>
                 </Button>
