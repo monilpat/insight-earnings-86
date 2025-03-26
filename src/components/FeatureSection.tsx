@@ -41,6 +41,13 @@ const FeatureSection = () => {
     }
   }, [isVisible]);
 
+  // Hardcoded image URLs - using direct imports
+  const gabbyImagesSrc = [
+    "https://lovable-uploads.s3.amazonaws.com/7ab44eed-d640-40ef-8592-949715fc3864.png", // Gabby with coin
+    "https://lovable-uploads.s3.amazonaws.com/032f900e-b22c-4522-8081-c1e3657c3798.png", // Gabby with cash
+    "https://lovable-uploads.s3.amazonaws.com/fc37ab26-3bcf-42eb-af92-343db6eeb828.png"  // Gabby thinking
+  ];
+
   return (
     <section id="features" className="section-container bg-gabby-dark/30" ref={featureSectionRef}>
       <div className="max-w-6xl mx-auto">
@@ -83,7 +90,7 @@ const FeatureSection = () => {
           
           {/* Right side - Feature visuals */}
           <div className="relative h-[400px] glass-card rounded-2xl p-6 overflow-hidden">
-            {features.map((feature, index) => (
+            {gabbyImagesSrc.map((imgSrc, index) => (
               <div 
                 key={index}
                 className={`absolute inset-0 flex items-center justify-center transition-opacity duration-500 ${
@@ -91,8 +98,8 @@ const FeatureSection = () => {
                 }`}
               >
                 <img 
-                  src={`/lovable-uploads/${gabbyImages[index]}`} 
-                  alt={feature.title}
+                  src={imgSrc}
+                  alt={features[index].title}
                   className="max-h-full object-contain animate-float"
                 />
               </div>
@@ -124,13 +131,6 @@ const features: Feature[] = [
     title: "Secure Monetization",
     description: "Stake, earn, and transact with full transparency via the blockchain."
   }
-];
-
-// Updated Gabby image URLs
-const gabbyImages = [
-  "7ab44eed-d640-40ef-8592-949715fc3864.png", // Gabby with coin
-  "032f900e-b22c-4522-8081-c1e3657c3798.png", // Gabby with cash
-  "fc37ab26-3bcf-42eb-af92-343db6eeb828.png"  // Gabby thinking
 ];
 
 export default FeatureSection;
