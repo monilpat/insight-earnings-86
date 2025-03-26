@@ -41,9 +41,11 @@ const Hero = () => {
             <Button variant="secondary" icon={true}>
               Buy $GABBY
             </Button>
-            <Button variant="outline">
-              Learn How It Works
-            </Button>
+            <a href="https://docs.google.com/document/d/1g03fNEoXCUqKewYlLLMb3hGLXDezu-dRb0-xNewmixc/edit?tab=t.0" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline">
+                Learn How It Works
+              </Button>
+            </a>
           </div>
           
           {/* Scroll indicator */}
