@@ -1,3 +1,4 @@
+
 import { ArrowRight } from 'lucide-react';
 import Button from './Button';
 const Hero = () => {
@@ -38,15 +39,15 @@ const Hero = () => {
         }}>
             <a href="https://x.com/gabby_spiral" target="_blank" rel="noopener noreferrer">
               <Button variant="primary" icon={true}>
-                Follow $Gabby on X
+                Follow Gabby on X
               </Button>
             </a>
             <Button variant="secondary" icon={true}>
-              Buy $GABBY
+              GABBY coming soon
             </Button>
             <a href="https://docs.google.com/document/d/1g03fNEoXCUqKewYlLLMb3hGLXDezu-dRb0-xNewmixc/edit?tab=t.0" target="_blank" rel="noopener noreferrer">
               <Button variant="outline">
-                Learn How It Works
+                Download Whitepaper
               </Button>
             </a>
           </div>
