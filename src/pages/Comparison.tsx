@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -51,6 +50,15 @@ const Comparison = () => {
                   </TableRow>
                 </TableHeader>
                 <TableBody>
+                  <TableRow className="bg-gradient-to-r from-gabby-purple/30 to-gabby-gold/20 border-b border-white/10">
+                    <TableCell className="font-medium text-white">Gabby</TableCell>
+                    <TableCell className="text-white/90">Web3 AI Platform</TableCell>
+                    <TableCell className="text-white/90">AI-powered conversations with virtual personas</TableCell>
+                    <TableCell className="text-white/90">Pay-per-message; pay-per-task; staking rewards</TableCell>
+                    <TableCell className="text-white/90">GABBY token with utility and governance rights</TableCell>
+                    <TableCell className="text-white/90">Early stage of development; evolving AI capability</TableCell>
+                  </TableRow>
+                  
                   <TableRow className="border-white/5">
                     <TableCell className="font-medium text-white">Cameo</TableCell>
                     <TableCell className="text-white/80">Web2 Paid Celebrity</TableCell>
@@ -103,7 +111,47 @@ const Comparison = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Cameo */}
+              <div className="bg-gradient-to-br from-gabby-purple/20 to-gabby-gold/10 border border-white/10 rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-gradient mb-4">Gabby</h3>
+                <p className="text-white/60 text-sm mb-4">Web3 AI Platform</p>
+                
+                <div className="mb-4">
+                  <h4 className="text-gabby-gold font-medium mb-2">Strengths</h4>
+                  <ul className="text-white/80 space-y-1 list-disc pl-5">
+                    <li>Combines AI scalability with token economics</li>
+                    <li>Microtransaction-based revenue model</li>
+                    <li>Decentralized ownership structure</li>
+                  </ul>
+                </div>
+                
+                <div className="mb-4">
+                  <h4 className="text-red-400 font-medium mb-2">Weaknesses</h4>
+                  <ul className="text-white/80 space-y-1 list-disc pl-5">
+                    <li>Early stage platform in development</li>
+                    <li>Building user trust in a new paradigm</li>
+                    <li>Market education needs</li>
+                  </ul>
+                </div>
+                
+                <div className="mb-4">
+                  <h4 className="text-green-400 font-medium mb-2">Opportunities</h4>
+                  <ul className="text-white/80 space-y-1 list-disc pl-5">
+                    <li>First-mover advantage in tokenized AI interactions</li>
+                    <li>Expanding to multi-chain integrations</li>
+                    <li>Cross-platform API opportunities</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 className="text-orange-400 font-medium mb-2">Threats</h4>
+                  <ul className="text-white/80 space-y-1 list-disc pl-5">
+                    <li>Regulatory uncertainty in crypto space</li>
+                    <li>Competition from well-funded Web2 platforms</li>
+                    <li>AI technology advancement pace</li>
+                  </ul>
+                </div>
+              </div>
+              
               <div className="bg-gabby-dark/20 border border-white/10 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-white mb-4">Cameo</h3>
                 <p className="text-white/60 text-sm mb-4">Web2 Paid Celebrity</p>
@@ -145,7 +193,6 @@ const Comparison = () => {
                 </div>
               </div>
               
-              {/* MentorCruise */}
               <div className="bg-gabby-dark/20 border border-white/10 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-white mb-4">MentorCruise</h3>
                 <p className="text-white/60 text-sm mb-4">Web2 Mentorship Marketplace</p>
@@ -187,7 +234,6 @@ const Comparison = () => {
                 </div>
               </div>
               
-              {/* friend.tech */}
               <div className="bg-gabby-dark/20 border border-white/10 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-white mb-4">friend.tech</h3>
                 <p className="text-white/60 text-sm mb-4">Web3 SocialFi</p>
@@ -229,7 +275,6 @@ const Comparison = () => {
                 </div>
               </div>
               
-              {/* Character.AI */}
               <div className="bg-gabby-dark/20 border border-white/10 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-white mb-4">Character.AI</h3>
                 <p className="text-white/60 text-sm mb-4">AI-native Consumer</p>
@@ -271,7 +316,6 @@ const Comparison = () => {
                 </div>
               </div>
               
-              {/* Delphi.ai */}
               <div className="bg-gabby-dark/20 border border-white/10 rounded-lg p-6 md:col-span-2 lg:col-span-1">
                 <h3 className="text-xl font-semibold text-white mb-4">Delphi.ai</h3>
                 <p className="text-white/60 text-sm mb-4">AI Clone Platform</p>
