@@ -1,16 +1,15 @@
-
 import { ArrowRight } from 'lucide-react';
 import Button from './Button';
-
 const Hero = () => {
   const scrollToCtaSection = () => {
     // Find and scroll to the CTA section with ID "join-launch"
     const ctaSection = document.getElementById('join-launch');
     if (ctaSection) {
-      ctaSection.scrollIntoView({ behavior: 'smooth' });
+      ctaSection.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
   return <section className="relative pt-24 pb-16 md:py-32 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-gabby-dark/80 via-gabby-background to-gabby-background z-[-1]"></div>
@@ -51,9 +50,7 @@ const Hero = () => {
                 Follow Gabby on X
               </Button>
             </a>
-            <Button variant="secondary" icon={true} onClick={scrollToCtaSection}>
-              GABBY coming soon
-            </Button>
+            <Button variant="secondary" icon={true} onClick={scrollToCtaSection}>Buy $GABBY token</Button>
             <a href="https://docs.google.com/document/d/1g03fNEoXCUqKewYlLLMb3hGLXDezu-dRb0-xNewmixc/edit?tab=t.0" target="_blank" rel="noopener noreferrer">
               <Button variant="outline">
                 Download Whitepaper
