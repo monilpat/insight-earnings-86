@@ -4,8 +4,8 @@ import Button from './Button';
 
 const Hero = () => {
   const scrollToCtaSection = () => {
-    // Find CTA section and scroll to it
-    const ctaSection = document.querySelector('section.section-container:has(h2:contains("JOIN GABBY TOKEN LAUNCH"))');
+    // Find and scroll to the CTA section with ID "join-launch"
+    const ctaSection = document.getElementById('join-launch');
     if (ctaSection) {
       ctaSection.scrollIntoView({ behavior: 'smooth' });
     }
