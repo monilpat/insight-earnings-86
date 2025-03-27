@@ -37,12 +37,10 @@ const FeatureSection = () => {
   return <section id="features" className="section-container bg-gabby-dark/30" ref={featureSectionRef}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="heading-lg text-white mb-4 animate-fade-in-up">
-            Meet $GABBY — Your Web3 AI Partner
-          </h2>
+          <h2 className="heading-lg text-white mb-4 animate-fade-in-up">Meet GABBY — Your Web3 AI Partner</h2>
           <p className="text-lg text-white/70 max-w-3xl mx-auto animate-fade-in-up" style={{
           animationDelay: '0.1s'
-        }}>With $GABBY, you gain immediate access to:</p>
+        }}>With GABBY, you gain immediate access to:</p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
