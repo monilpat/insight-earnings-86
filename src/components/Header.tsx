@@ -31,15 +31,12 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <span className="text-xl font-display font-bold text-gradient">$GABBY</span>
+          <span className="text-xl font-display font-bold text-gradient">GABBY</span>
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/#about" className="text-sm font-medium text-white/80 hover:text-white transition-colors">About</Link>
-          <Link to="/#features" className="text-sm font-medium text-white/80 hover:text-white transition-colors">Features</Link>
-          <Link to="/#faq" className="text-sm font-medium text-white/80 hover:text-white transition-colors">FAQ</Link>
-          <Link to="/#community" className="text-sm font-medium text-white/80 hover:text-white transition-colors">Community</Link>
+          <Link to="/comparison" className="text-sm font-medium text-white/80 hover:text-white transition-colors">See how Gabby Compares</Link>
           <a 
             href="https://x.com/gabby_spiral" 
             target="_blank" 
@@ -68,32 +65,11 @@ const Header = () => {
         <div className="md:hidden absolute top-full left-0 right-0 bg-gabby-background/95 backdrop-blur-lg border-t border-white/10 animate-fade-in-up">
           <div className="px-4 py-5 space-y-4">
             <Link 
-              to="/#about" 
+              to="/comparison" 
               className="block py-2 text-lg font-medium text-white/80 hover:text-white"
               onClick={() => setIsMenuOpen(false)}
             >
-              About
-            </Link>
-            <Link 
-              to="/#features" 
-              className="block py-2 text-lg font-medium text-white/80 hover:text-white"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Features
-            </Link>
-            <Link 
-              to="/#faq" 
-              className="block py-2 text-lg font-medium text-white/80 hover:text-white"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              FAQ
-            </Link>
-            <Link 
-              to="/#community" 
-              className="block py-2 text-lg font-medium text-white/80 hover:text-white"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Community
+              See how Gabby Compares
             </Link>
             <a 
               href="https://x.com/gabby_spiral" 
