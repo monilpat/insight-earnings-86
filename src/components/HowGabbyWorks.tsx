@@ -57,6 +57,23 @@ const HowGabbyWorks = () => {
               <p className="text-white/70 text-sm">Premium interactions build the Gabby ecosystem</p>
             </div>
           </div>
+          
+          {/* Gabby GIF from Feature Section */}
+          <div className="mt-12 glass-card rounded-2xl p-6 overflow-hidden">
+            <div className="flex justify-center items-center">
+              <div className="relative h-[300px] md:h-[400px] w-full">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/df0e6c04-737c-4682-908d-2b32aa085c9e.png" 
+                    alt="Gabby Assistant" 
+                    className="max-h-full object-contain animate-float" 
+                  />
+                </div>
+                {/* Background decoration */}
+                <div className="absolute inset-0 bg-gradient-to-br from-gabby-purple/20 to-transparent z-0"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
