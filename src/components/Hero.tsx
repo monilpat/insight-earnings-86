@@ -1,4 +1,3 @@
-
 import { ArrowRight } from 'lucide-react';
 import Button from './Button';
 
@@ -25,21 +24,31 @@ const Hero = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Main content */}
-          <div className="glass-card p-8 rounded-2xl backdrop-blur-sm animate-fade-in-up">
-            <div className="space-y-6">
-              <h2 className="text-2xl md:text-3xl text-white/90 font-medium">
-                Talk to Gabby for free
-              </h2>
-              
-              <h2 className="text-2xl md:text-3xl text-white/90 font-medium">
-                Pay Gabby for deeper insight
-              </h2>
-              
-              <p className="text-base text-white/70 italic max-w-2xl mx-auto">
-                She consults her network of vetted experts and AI agents on your behalf
-              </p>
-            </div>
+          {/* Decorative chip */}
+          <div className="inline-block bg-gabby-purple/20 backdrop-blur-sm px-4 py-1 rounded-full mb-6 animate-fade-in-up">
+            <span className="text-sm font-medium text-white/90">
+              The Future of AI & Crypto
+            </span>
+          </div>
+          
+          {/* Main headline */}
+          <h1 className="heading-xl text-gradient animate-fade-in-up" style={{
+          animationDelay: '0.1s'
+        }}>Turn AI Conversations Into Profits with GABBY</h1>
+          
+          {/* Updated copy */}
+          <div className="mt-6 space-y-4 animate-fade-in-up" style={{
+          animationDelay: '0.2s'
+        }}>
+            <p className="text-xl md:text-2xl text-white/90 font-medium">
+              Talk to Gabby for free
+            </p>
+            <p className="text-xl md:text-2xl text-white/90 font-medium">
+              Pay Gabby for deeper insight
+            </p>
+            <p className="text-base text-white/70 italic">
+              She consults her network of vetted experts and AI agents on your behalf
+            </p>
           </div>
           
           {/* CTA buttons */}
