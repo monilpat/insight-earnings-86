@@ -10,6 +10,7 @@ import FaqSection from "../components/FaqSection";
 import CommunitySection from "../components/CommunitySection";
 import ContactSection from "../components/ContactSection";
 import GabbyHero from "../components/GabbyHero";
+import HowGabbyWorks from "../components/HowGabbyWorks";
 
 export default function Index() {
   return (
@@ -18,6 +19,7 @@ export default function Index() {
       <main className="flex-1">
         <GabbyHero />
         <Hero />
+        <HowGabbyWorks />
         <FeatureSection />
         <ProblemSection />
         <CtaSection />
