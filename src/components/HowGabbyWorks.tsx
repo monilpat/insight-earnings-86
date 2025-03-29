@@ -49,6 +49,7 @@ const HowGabbyWorks = () => {
             <div className="glass-card p-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
               <h3 className="text-white font-medium mb-2">Pay Human/AI for Guidance</h3>
               <p className="text-white/70 text-sm">Vetted experts and AI agents provide specialized knowledge</p>
+              <p className="text-gabby-gold/90 text-xs mt-1 font-medium">Payments occur in $GABBY (optionally swapped from USDC)</p>
             </div>
             
             <div className="glass-card p-4 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
