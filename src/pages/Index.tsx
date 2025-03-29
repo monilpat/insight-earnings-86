@@ -1,41 +1,29 @@
 
-import { useEffect } from 'react';
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import ProblemSection from '@/components/ProblemSection';
-import FeatureSection from '@/components/FeatureSection';
-import TeamSection from '@/components/TeamSection';
-import CtaSection from '@/components/CtaSection';
-import FaqSection from '@/components/FaqSection';
-import CommunitySection from '@/components/CommunitySection';
-import ContactSection from '@/components/ContactSection';
-import Footer from '@/components/Footer';
-import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
+import Hero from "../components/Hero";
+import FeatureSection from "../components/FeatureSection";
+import ProblemSection from "../components/ProblemSection";
+import CtaSection from "../components/CtaSection";
+import TeamSection from "../components/TeamSection";
+import FaqSection from "../components/FaqSection";
+import CommunitySection from "../components/CommunitySection";
+import ContactSection from "../components/ContactSection";
+import GabbyHero from "../components/GabbyHero";
 
-const Index = () => {
-  useEffect(() => {
-    // Scroll to top when page loads
-    window.scrollTo(0, 0);
-  }, []);
-
+export default function Index() {
   return (
-    <div className="min-h-screen bg-gabby-background">
-      <Header />
-      
-      <main>
+    <div className="flex flex-col min-h-[100dvh]">
+      <main className="flex-1">
+        <GabbyHero />
         <Hero />
-        <ProblemSection />
         <FeatureSection />
-        <TeamSection />
+        <ProblemSection />
         <CtaSection />
+        <TeamSection />
         <FaqSection />
         <CommunitySection />
         <ContactSection />
       </main>
-      
-      <Footer />
     </div>
   );
-};
-
-export default Index;
+}
