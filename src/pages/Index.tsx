@@ -11,6 +11,7 @@ import CommunitySection from "../components/CommunitySection";
 import ContactSection from "../components/ContactSection";
 import GabbyHero from "../components/GabbyHero";
 import HowGabbyWorks from "../components/HowGabbyWorks";
+import GabbyNetwork from "../components/GabbyNetwork";
 
 export default function Index() {
   return (
@@ -20,6 +21,7 @@ export default function Index() {
         <GabbyHero />
         <Hero />
         <HowGabbyWorks />
+        <GabbyNetwork />
         <FeatureSection />
         <ProblemSection />
         <CtaSection />
