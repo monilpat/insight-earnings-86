@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import Button from './Button';
+
 const Hero = () => {
   const scrollToCtaSection = () => {
     // Find and scroll to the CTA section with ID "join-launch"
@@ -10,6 +11,7 @@ const Hero = () => {
       });
     }
   };
+
   return <section className="relative pt-24 pb-16 md:py-32 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-gabby-dark/80 via-gabby-background to-gabby-background z-[-1]"></div>
@@ -34,12 +36,20 @@ const Hero = () => {
           animationDelay: '0.1s'
         }}>Turn AI Conversations Into Profits with GABBY</h1>
           
-          {/* Subheadline */}
-          <p className="mt-6 text-xl md:text-2xl text-white/80 font-light animate-fade-in-up" style={{
+          {/* Updated copy */}
+          <div className="mt-6 space-y-4 animate-fade-in-up" style={{
           animationDelay: '0.2s'
         }}>
-            Verified insights. Encrypted intelligence. Decentralized profits.
-          </p>
+            <p className="text-xl md:text-2xl text-white/90 font-medium">
+              Talk to Gabby for free
+            </p>
+            <p className="text-xl md:text-2xl text-white/90 font-medium">
+              Pay Gabby for deeper insight
+            </p>
+            <p className="text-base text-white/70 italic">
+              She consults her network of vetted experts and AI agents on your behalf
+            </p>
+          </div>
           
           {/* CTA buttons */}
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style={{
@@ -71,4 +81,5 @@ const Hero = () => {
       </div>
     </section>;
 };
+
 export default Hero;
