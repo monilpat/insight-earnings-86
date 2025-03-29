@@ -28,7 +28,7 @@ const GabbyHero = () => {
           </div>
           
           {/* Text on the right */}
-          <div className="w-full md:w-3/5 text-left space-y-5 mt-6 md:mt-0">
+          <div className="w-full md:w-3/5 text-left space-y-3 mt-6 md:mt-0">
             <h2 className={cn(
               "text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight",
               "font-light text-white"
@@ -46,25 +46,6 @@ const GabbyHero = () => {
                 Until Gabby.
               </span>
             </h2>
-            
-            <div className="mt-8 space-y-4 text-white/90">
-              <div className="flex flex-col space-y-1">
-                <span className="text-xl font-medium text-[#F5AF19]">Talk to Gabby for free</span>
-              </div>
-              
-              <div className="flex flex-col space-y-1">
-                <span className="text-xl font-medium text-[#F5AF19]">Pay Gabby for deeper insight</span>
-                <span className="text-sm text-white/70">Consults vetted experts and AI agents on your behalf</span>
-              </div>
-              
-              <div className="mt-6 py-3 px-4 border border-[#9b87f5]/30 bg-[#1A0D2C]/50 rounded-lg backdrop-blur-sm">
-                <p className="text-sm font-medium text-white">
-                  <span className="text-[#9b87f5]">Trusted knowledge.</span>{" "}
-                  <span className="text-[#F5AF19]">Secure connections.</span>{" "}
-                  <span className="text-white">Web3 earnings.</span>
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
