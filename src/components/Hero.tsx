@@ -15,8 +15,8 @@ const Hero = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Main headline - Updated with added bottom padding */}
-          <h1 className="heading-xl text-gradient animate-fade-in-up mb-8">Unlock Industry Leading Insights</h1>
+          {/* Main headline - Added more bottom padding */}
+          <h1 className="heading-xl text-gradient animate-fade-in-up mb-12 pb-4">Unlock Industry Leading Insights</h1>
           
           {/* Updated copy */}
           <div className="mt-6 space-y-4 animate-fade-in-up" style={{
