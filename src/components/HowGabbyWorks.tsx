@@ -6,11 +6,27 @@ const HowGabbyWorks = () => {
   return (
     <section className="section-container bg-gabby-dark/20 py-20 md:py-28">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="heading-lg text-white mb-4 animate-fade-in-up">How Gabby Works</h2>
-          <p className="text-lg text-white/70 max-w-3xl mx-auto animate-fade-in-up" style={{
-            animationDelay: '0.1s'
-          }}>A simple process that transforms conversations into value</p>
+        </div>
+        
+        {/* Single Card with updated content - Now positioned before the image */}
+        <div className="relative px-4 md:px-0 mb-10">
+          <Card className="glass-card border-none animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <CardContent className="p-8">
+              <div className="grid grid-cols-1 gap-6">
+                <div className="bg-gabby-purple/10 p-6 rounded-xl">
+                  <h3 className="text-white font-medium text-xl mb-3">Pay Human/AI for Expertise</h3>
+                  <p className="text-white/80 mb-4">
+                    Start with basic conversations at no cost, or unlock deeper insights with premium queries with vetted experts and AI agents provide specialized expertise
+                  </p>
+                  <p className="text-gabby-gold/90 text-sm font-medium inline-block bg-gabby-gold/10 px-3 py-1 rounded-full">
+                    Payments occur in $GABBY (optionally swapped from USDC)
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
         
         <div className="relative px-4 md:px-0">
@@ -33,25 +49,6 @@ const HowGabbyWorks = () => {
             <div className="absolute bottom-10 right-10 w-40 h-40 bg-gabby-gold/5 rounded-full blur-3xl animate-pulse-subtle" style={{
               animationDelay: '1.5s'
             }}></div>
-          </div>
-          
-          {/* Single Card with updated content */}
-          <div className="mt-8">
-            <Card className="glass-card border-none animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <CardContent className="p-8">
-                <div className="grid grid-cols-1 gap-6">
-                  <div className="bg-gabby-purple/10 p-6 rounded-xl">
-                    <h3 className="text-white font-medium text-xl mb-3">Pay Human/AI for Expertise</h3>
-                    <p className="text-white/80 mb-4">
-                      Start with basic conversations at no cost, or unlock deeper insights with premium queries with vetted experts and AI agents provide specialized expertise
-                    </p>
-                    <p className="text-gabby-gold/90 text-sm font-medium inline-block bg-gabby-gold/10 px-3 py-1 rounded-full">
-                      Payments occur in $GABBY (optionally swapped from USDC)
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

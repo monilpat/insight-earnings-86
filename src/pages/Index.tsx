@@ -5,9 +5,7 @@ import Hero from "../components/Hero";
 import FeatureSection from "../components/FeatureSection";
 import CtaSection from "../components/CtaSection";
 import TeamSection from "../components/TeamSection";
-import FaqSection from "../components/FaqSection";
 import CommunitySection from "../components/CommunitySection";
-import ContactSection from "../components/ContactSection";
 import GabbyHero from "../components/GabbyHero";
 import HowGabbyWorks from "../components/HowGabbyWorks";
 import GabbyInAction from "../components/GabbyInAction";
@@ -26,9 +24,7 @@ export default function Index() {
         <FeatureSection />
         <CtaSection />
         <TeamSection />
-        <FaqSection />
         <CommunitySection />
-        <ContactSection />
       </main>
     </div>
   );

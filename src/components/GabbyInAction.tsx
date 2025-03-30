@@ -8,9 +8,6 @@ const GabbyInAction = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="heading-lg text-white mb-4 animate-fade-in-up">Gabby in Action</h2>
-          <p className="text-lg text-white/70 max-w-3xl mx-auto animate-fade-in-up" style={{
-            animationDelay: '0.1s'
-          }}>See how Gabby connects you with the best in class experts</p>
         </div>
         
         <div className="flex flex-col gap-12 px-4 md:px-0 max-w-4xl mx-auto">

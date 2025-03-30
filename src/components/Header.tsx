@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronRight, Download } from 'lucide-react';
+import { Menu, X, ChevronRight } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Button from './Button';
@@ -45,9 +45,9 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation with Tabs */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex items-center">
           <Tabs defaultValue={location.pathname === "/comparison" ? "comparison" : "home"} className="w-full">
-            <TabsList className="bg-transparent h-auto">
+            <TabsList className="bg-transparent h-auto space-x-4">
               <Link to="/comparison">
                 <TabsTrigger 
                   value="comparison" 
@@ -64,7 +64,7 @@ const Header = () => {
                   White Paper
                 </TabsTrigger>
               </a>
-              <Button variant="secondary" size="sm" onClick={scrollToCtaSection}>
+              <Button variant="secondary" size="sm" onClick={scrollToCtaSection} className="ml-2 mr-2">
                 Buy $GABBY
               </Button>
               <a 

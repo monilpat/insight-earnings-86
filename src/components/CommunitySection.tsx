@@ -1,5 +1,5 @@
 
-import { MessageCircle, Twitter, Loader } from 'lucide-react';
+import { MessageCircle, Twitter } from 'lucide-react';
 import Button from './Button';
 
 const CommunitySection = () => {
@@ -8,26 +8,9 @@ const CommunitySection = () => {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="heading-lg text-white mb-4">Join our Community</h2>
-          <p className="text-xl text-gradient font-semibold">Join a Movement of Intelligence-Driven Profit</p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="glass-card p-6">
-              <div className="flex items-start mb-4">
-                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mr-4">
-                  <MessageCircle className="h-5 w-5 text-gabby-gold" />
-                </div>
-                <p className="text-white/90 italic">{testimonial.text}</p>
-              </div>
-              <div className="text-right">
-                <p className="text-white font-semibold">– {testimonial.author}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        
-        <div className="grid sm:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6">
           {socialLinks.map((social, index) => (
             <a 
               key={index}
@@ -49,17 +32,6 @@ const CommunitySection = () => {
   );
 };
 
-const testimonials = [
-  {
-    text: "Gabby changed how I think about AI. Real intel. Real rewards.",
-    author: "Web3 Analyst"
-  },
-  {
-    text: "Finally, an AI tailored for me.",
-    author: "Early Adopter"
-  }
-];
-
 const socialLinks = [
   {
     name: "Telegram",
@@ -72,12 +44,6 @@ const socialLinks = [
     url: "https://x.com/gabby_spiral",
     status: "Active",
     icon: <Twitter className="h-5 w-5 text-white" />
-  },
-  {
-    name: "Discord",
-    url: "#",
-    status: "Coming Soon",
-    icon: <Loader className="h-5 w-5 text-white animate-spin" />
   }
 ];
 

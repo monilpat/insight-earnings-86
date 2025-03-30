@@ -17,7 +17,7 @@ const GabbyNetwork = () => {
           {/* Human Network - Updated text */}
           <div className="glass-card rounded-2xl p-6 md:p-8 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <div className="text-center mb-6">
-              <h3 className="text-xl font-medium text-white mb-3">Human Expert Network</h3>
+              <h3 className="text-xl font-medium text-white mb-3">Human Experts</h3>
               <p className="text-white/70">A curated network of industry veterans and specialists</p>
             </div>
             
@@ -39,7 +39,7 @@ const GabbyNetwork = () => {
           {/* AI Agent Network - Updated text */}
           <div className="glass-card rounded-2xl p-6 md:p-8 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <div className="text-center mb-6">
-              <h3 className="text-xl font-medium text-white mb-3">AI Agent Network</h3>
+              <h3 className="text-xl font-medium text-white mb-3">AI Agents</h3>
               <p className="text-white/70">Cutting-edge, specialized AI agents providing curated insights</p>
             </div>
             
