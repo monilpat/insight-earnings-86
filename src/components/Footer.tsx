@@ -17,13 +17,6 @@ const Footer = () => {
             </Link>
           </div>
           
-          <div className="flex flex-wrap justify-center space-x-8 mb-6 md:mb-0">
-            <Link to="/#about" className="text-sm text-white/70 hover:text-white">About</Link>
-            <Link to="/#features" className="text-sm text-white/70 hover:text-white">Features</Link>
-            <Link to="/#faq" className="text-sm text-white/70 hover:text-white">FAQ</Link>
-            <Link to="/#community" className="text-sm text-white/70 hover:text-white">Community</Link>
-          </div>
-          
           <button 
             onClick={scrollToTop}
             className="w-10 h-10 rounded-full bg-gabby-purple/20 flex items-center justify-center hover:bg-gabby-purple/40 transition-colors"
