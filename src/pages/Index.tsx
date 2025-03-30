@@ -19,7 +19,34 @@ export default function Index() {
       <Header />
       <main className="flex-1">
         <GabbyHero />
-        <Hero />
+        
+        {/* Hero section with moved text */}
+        <section className="relative pt-16 pb-16 overflow-hidden">
+          {/* Background gradient */}
+          <div className="absolute inset-0 bg-gradient-to-b from-gabby-dark/80 via-gabby-background to-gabby-background z-[-1]"></div>
+          
+          {/* Animated background elements */}
+          <div className="absolute top-20 left-10 w-64 h-64 bg-gabby-purple/10 rounded-full blur-3xl animate-pulse-subtle"></div>
+          <div className="absolute bottom-10 right-10 w-80 h-80 bg-gabby-gold/5 rounded-full blur-3xl animate-pulse-subtle" style={{
+            animationDelay: '1s'
+          }}></div>
+          
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-4xl mx-auto">
+              {/* Main headline - Added more bottom padding */}
+              <h1 className="heading-xl text-gradient animate-fade-in-up mb-12 pb-4">Unlock Industry Leading Insights</h1>
+              
+              {/* Updated copy */}
+              <div className="mt-6 space-y-4 animate-fade-in-up" style={{
+                animationDelay: '0.2s'
+              }}>
+                <p className="text-xl md:text-2xl text-white/90 font-medium">
+                  Talk to Gabby for free. Pay for cutting edge human and AI insights from her network of vetted experts
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
         
         {/* Cards from GabbyInAction placed directly in the Index component */}
         <section className="section-container bg-gabby-dark/10 py-20">
@@ -52,7 +79,7 @@ export default function Index() {
                   <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
                     <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
                     <img 
-                      src="/lovable-uploads/4ee12d73-42a6-4d3a-901c-1b8c1b9166ab.png" 
+                      src="/lovable-uploads/3a2c517e-debf-4633-8b38-6374436214a0.png" 
                       alt="Human Expert Response"
                       className="w-full h-auto relative z-10"
                     />
@@ -95,13 +122,13 @@ export default function Index() {
                 </CardContent>
               </Card>
               
-              {/* Free Option Card */}
+              {/* Free Option Card - Updated text */}
               <Card className="glass-card border-0 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                 <CardHeader className="pb-2">
                   <CardTitle className="text-2xl text-white">Free</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-white/70 mb-4">Experience Gabby without any subscription</p>
+                  <p className="text-white/70 mb-4">Experience Gabby for high level insights</p>
                   
                   {/* User Query */}
                   <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 mb-4">
@@ -122,7 +149,7 @@ export default function Index() {
                   <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
                     <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
                     <img 
-                      src="/lovable-uploads/3a2c517e-debf-4633-8b38-6374436214a0.png" 
+                      src="/lovable-uploads/4ee12d73-42a6-4d3a-901c-1b8c1b9166ab.png" 
                       alt="Free Option Response"
                       className="w-full h-auto relative z-10"
                     />

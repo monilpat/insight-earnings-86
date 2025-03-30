@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { ExternalLink } from 'lucide-react';
+
 const TeamSection = () => {
   return <section className="section-container">
       <div className="max-w-5xl mx-auto">
@@ -10,7 +11,7 @@ const TeamSection = () => {
           <div className="text-center mb-10">
             <h2 className="heading-md text-white mb-4">Built by Experts You Can Trust</h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              GABBY is created by the team behind <strong className="text-white">Eliza V2</strong>, known for successful AI + blockchain integrations. With a proven track record in building Web3 tools, we're creating a future where AI conversations deliver <strong className="text-gradient">real value</strong>.
+              GABBY is created by the team behind <strong className="text-white">Eliza V2</strong> and <strong className="text-white">Reality Spiral</strong>, known for successful AI + blockchain integrations. With a proven track record in building AI x Web3 tools, we're creating a future where AI conversations deliver <strong className="text-gradient">real value</strong>.
             </p>
           </div>
           
@@ -61,4 +62,5 @@ const TeamSection = () => {
       </div>
     </section>;
 };
+
 export default TeamSection;
