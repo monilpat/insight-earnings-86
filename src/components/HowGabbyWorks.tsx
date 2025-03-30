@@ -1,6 +1,5 @@
 
 import React from "react";
-import { ArrowDown, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 
 const HowGabbyWorks = () => {
@@ -18,8 +17,9 @@ const HowGabbyWorks = () => {
           {/* Flow diagram with improved image rendering */}
           <div className="w-full glass-card rounded-2xl p-6 md:p-10 overflow-hidden">
             <div className="relative flex justify-center">
+              {/* Using placeholder image since the original image had loading issues */}
               <img 
-                src="/lovable-uploads/550a71f7-27b3-4cee-b5a2-6dc4ccc98386.png" 
+                src="/lovable-uploads/91089426-7545-4c5f-b950-e2e0faefe78f.png" 
                 alt="How Gabby Works - Flow Diagram" 
                 className="w-full h-auto object-contain max-w-4xl"
               />
@@ -35,34 +35,22 @@ const HowGabbyWorks = () => {
             }}></div>
           </div>
           
-          {/* Interactive elements - Improved card layout */}
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="glass-card border-none animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          {/* Interactive elements - Modified card layout as requested */}
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Combined card for Free and Premium Q&A */}
+            <Card className="glass-card border-none animate-fade-in-up col-span-1 md:col-span-2" style={{ animationDelay: '0.2s' }}>
               <CardContent className="p-6">
-                <h3 className="text-white font-medium text-lg mb-2">Free Question and Response</h3>
-                <p className="text-white/70">Start with basic conversations at no cost</p>
+                <h3 className="text-white font-medium text-lg mb-2">Question and Response</h3>
+                <p className="text-white/70">Start with basic conversations at no cost, or unlock deeper insights with premium queries</p>
               </CardContent>
             </Card>
             
-            <Card className="glass-card border-none animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-              <CardContent className="p-6">
-                <h3 className="text-white font-medium text-lg mb-2">Premium Question and Response</h3>
-                <p className="text-white/70">Unlock deeper insights with premium queries</p>
-              </CardContent>
-            </Card>
-            
+            {/* Pay Human/AI card stays as is */}
             <Card className="glass-card border-none animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
               <CardContent className="p-6">
                 <h3 className="text-white font-medium text-lg mb-2">Pay Human/AI for Guidance</h3>
                 <p className="text-white/70">Vetted experts and AI agents provide specialized knowledge</p>
                 <p className="text-gabby-gold/90 text-sm mt-2 font-medium">Payments occur in $GABBY (optionally swapped from USDC)</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="glass-card border-none animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
-              <CardContent className="p-6">
-                <h3 className="text-white font-medium text-lg mb-2">Increase Treasury</h3>
-                <p className="text-white/70">Premium interactions build the Gabby ecosystem</p>
               </CardContent>
             </Card>
           </div>
