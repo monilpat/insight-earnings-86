@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronRight } from 'lucide-react';
+import { Menu, X, ChevronRight, Download } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Button from './Button';
@@ -56,7 +56,7 @@ const Header = () => {
                   Research
                 </TabsTrigger>
               </Link>
-              <a href="https://docs.google.com/document/d/1g03fNEoXCUqKewYlLLMb3hGLXDezu-dRb0-xNewmixc/edit?tab=t.0" target="_blank" rel="noopener noreferrer">
+              <a href="/whitepaper.pdf" download="whitepaper.pdf">
                 <TabsTrigger 
                   value="whitepaper" 
                   className="data-[state=active]:bg-gabby-background/40 data-[state=active]:text-white text-white/80"
@@ -102,9 +102,8 @@ const Header = () => {
               Research
             </Link>
             <a 
-              href="https://docs.google.com/document/d/1g03fNEoXCUqKewYlLLMb3hGLXDezu-dRb0-xNewmixc/edit?tab=t.0" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+              href="/whitepaper.pdf" 
+              download="whitepaper.pdf" 
               className="block py-2 text-lg font-medium text-white/80 hover:text-white"
               onClick={() => setIsMenuOpen(false)}
             >
