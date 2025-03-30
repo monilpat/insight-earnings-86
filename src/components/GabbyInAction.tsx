@@ -60,8 +60,20 @@ const GabbyInAction = () => {
                   <span className="underline decoration-gabby-gold/70 px-1">millions</span> 
                   in monetized conversations with humans in <span className="font-bold text-purple-400">Web 3</span>.
                   <br className="hidden md:block" /><br className="hidden sm:block" />
-                  <span className="text-3xl font-bold mt-4 block text-gradient bg-clip-text animate-pulse-subtle">Gabby bridges the gap.</span>
                 </p>
+                
+                {/* Enhanced "Gabby bridges the gap" text */}
+                <div className="relative mt-6 py-4 px-2">
+                  {/* Glow effect behind text */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/30 to-[#F5AF19]/30 rounded-lg blur-xl"></div>
+                  
+                  {/* Animated border */}
+                  <div className="absolute inset-0 border-2 border-gabby-gold/50 rounded-lg animate-pulse-subtle"></div>
+                  
+                  <h3 className="text-4xl md:text-5xl font-bold text-center relative z-10 animate-gradient-shift bg-gradient-to-r from-gabby-gold via-[#9b87f5] to-gabby-gold bg-clip-text text-transparent bg-300% tracking-wide">
+                    Gabby bridges the gap.
+                  </h3>
+                </div>
               </div>
               
               {/* Market Positioning Image */}
