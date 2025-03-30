@@ -62,6 +62,35 @@ const Comparison = () => {
             </Card>
           </section>
 
+          {/* Market Overview Section */}
+          <section className="mb-16">
+            <div className="bg-gabby-dark/30 border border-white/10 rounded-lg p-8">
+              <h2 className="heading-md text-white mb-6">Market Overview: Monetized Conversations Are Evolving</h2>
+              
+              <div className="space-y-6 text-white/90">
+                <p className="leading-relaxed">
+                  Over the past decade, billions of dollars have flowed into monetized conversation platforms — from celebrity shoutouts on Cameo to expert mentorship on Intro and MentorCruise. Monetized conversations have expanded to customized agents like Character.AI, Delphi.ai. and China's Xiaoice. which have exploded in user numbers, proving the public's appetite for scalable, interactive dialogue.
+                </p>
+                
+                <p className="leading-relaxed">
+                  Yet across this landscape, critical limitations persist: human time doesn't scale, microtransactions are rare, and user ownership is nonexistent. Web3 social apps like friend.tech and time.fun added speculation and token dynamics but are not designed for AI agent-focused experiences.
+                </p>
+                
+                <p className="font-semibold text-gabby-gold text-xl mt-8 mb-4">
+                  Gabby enters the scene as the first conversational agent to fill that gap.
+                </p>
+                
+                <div className="mt-8">
+                  <h3 className="text-xl font-semibold text-white mb-4">Gabby's Positioning</h3>
+                  
+                  <p className="leading-relaxed">
+                    Gabby is not just another chatbot. She is a fully tokenized, agent-driven AI that operates autonomously across voice, video, and text. Users can get basic insights from her underlying LLM for free or pay per message or session in $GABBY for her to consult from among her thousands of human and AI contacts for highly customized results.  These contacts include human industry veterans as well as cutting edge agents like Manus, the entire ElizaOS org, and more!  See <a href="/#network" className="text-gabby-purple underline hover:text-gabby-gold transition-colors">our network</a> for just how far her network reaches!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section className="mb-20">
             <h2 className="heading-md text-white mb-8">Research</h2>
 
