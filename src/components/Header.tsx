@@ -53,7 +53,7 @@ const Header = () => {
                   value="comparison" 
                   className="data-[state=active]:bg-gabby-background/40 data-[state=active]:text-white text-white/80"
                 >
-                  Competitive Analysis
+                  Research
                 </TabsTrigger>
               </Link>
               <a href="https://docs.google.com/document/d/1g03fNEoXCUqKewYlLLMb3hGLXDezu-dRb0-xNewmixc/edit?tab=t.0" target="_blank" rel="noopener noreferrer">
@@ -99,7 +99,7 @@ const Header = () => {
               className="block py-2 text-lg font-medium text-white/80 hover:text-white"
               onClick={() => setIsMenuOpen(false)}
             >
-              Competitive Analysis
+              Research
             </Link>
             <a 
               href="https://docs.google.com/document/d/1g03fNEoXCUqKewYlLLMb3hGLXDezu-dRb0-xNewmixc/edit?tab=t.0" 
@@ -123,7 +123,7 @@ const Header = () => {
               href="https://x.com/gabby_spiral" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="block py-2 text-lg font-medium text-gradient"
+              className="block py-2 text-lg font-medium text-white/80 hover:text-white"
             >
               Follow on X <ChevronRight className="inline ml-1 h-4 w-4" />
             </a>
