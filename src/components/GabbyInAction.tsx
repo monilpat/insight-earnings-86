@@ -11,7 +11,7 @@ const GabbyInAction = () => {
         </div>
         
         <div className="flex flex-col gap-12 px-4 md:px-0 max-w-4xl mx-auto">
-          {/* Human Expert Card - Updated text */}
+          {/* Human Expert Card */}
           <Card className="glass-card border-0 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <CardHeader className="pb-2">
               <CardTitle className="text-2xl text-white">Human Expert</CardTitle>
@@ -29,7 +29,7 @@ const GabbyInAction = () => {
             </CardContent>
           </Card>
           
-          {/* AI Expert Card - Updated text */}
+          {/* AI Expert Card */}
           <Card className="glass-card border-0 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <CardHeader className="pb-2">
               <CardTitle className="text-2xl text-white">AI Expert</CardTitle>
@@ -47,15 +47,27 @@ const GabbyInAction = () => {
             </CardContent>
           </Card>
           
-          {/* Added market analysis card */}
+          {/* Enhanced Market Analysis Card */}
           <Card className="glass-card border-0 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <CardContent className="pt-6">
-              <div className="bg-gradient-to-r from-gabby-purple/20 to-gabby-gold/20 p-6 md:p-8 rounded-xl">
+            <CardContent className="pt-6 pb-8">
+              <div className="bg-gradient-to-r from-gabby-purple/20 to-gabby-gold/20 p-6 md:p-8 rounded-xl mb-6">
                 <p className="text-white text-lg md:text-xl font-medium leading-relaxed">
-                  Character.ai and Delphi alone rake in millions in monetized conversations with AIs in Web 2. 
-                  Friend.tech and time.fun facilitate millions in volume for monetized conversations in Web 3 but for humans, not AIs. 
-                  Gabby bridges the gap.
+                  <span className="text-gabby-gold font-semibold">Character.ai</span> and <span className="text-gabby-gold font-semibold">Delphi</span> alone rake in <span className="underline decoration-gabby-gold/70">millions</span> in monetized conversations with AIs in <span className="font-bold text-blue-400">Web 2</span>. 
+                  <br className="hidden md:block" />
+                  <span className="text-gabby-gold font-semibold">Friend.tech</span> and <span className="text-gabby-gold font-semibold">time.fun</span> facilitate <span className="underline decoration-gabby-gold/70">millions</span> in volume for monetized conversations in <span className="font-bold text-purple-400">Web 3</span> but for humans, not AIs.
+                  <br className="hidden md:block" />
+                  <span className="text-2xl font-bold mt-2 block text-gradient">Gabby bridges the gap.</span>
                 </p>
+              </div>
+              
+              {/* Market Positioning Image */}
+              <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
+                <img 
+                  src="/lovable-uploads/803e5791-deda-4534-b34f-17b9cd66ee5b.png" 
+                  alt="Gabby Market Positioning"
+                  className="w-full h-auto relative z-10"
+                />
               </div>
             </CardContent>
           </Card>
