@@ -60,6 +60,15 @@ const Comparison = () => {
                   </TableRow>
                   
                   <TableRow className="border-white/5">
+                    <TableCell className="font-medium text-white">time.fun</TableCell>
+                    <TableCell className="text-white/80">Web3 SocialFi</TableCell>
+                    <TableCell className="text-white/80">Token-gated DMs, calls with creators</TableCell>
+                    <TableCell className="text-white/80">Buy/sell creator time tokens</TableCell>
+                    <TableCell className="text-white/80">Token per creator</TableCell>
+                    <TableCell className="text-white/80">Requires creator availability</TableCell>
+                  </TableRow>
+                  
+                  <TableRow className="border-white/5">
                     <TableCell className="font-medium text-white">Cameo</TableCell>
                     <TableCell className="text-white/80">Web2 Paid Celebrity</TableCell>
                     <TableCell className="text-white/80">Asynchronous video messages with celebrities</TableCell>
@@ -67,6 +76,7 @@ const Comparison = () => {
                     <TableCell className="text-white/80">None (fiat payments only)</TableCell>
                     <TableCell className="text-white/80">Not scalable (human fulfillment); novelty fading; no micro-interactions</TableCell>
                   </TableRow>
+                  
                   <TableRow className="border-white/5">
                     <TableCell className="font-medium text-white">MentorCruise</TableCell>
                     <TableCell className="text-white/80">Web2 Mentorship</TableCell>
@@ -75,6 +85,7 @@ const Comparison = () => {
                     <TableCell className="text-white/80">None (fiat payments)</TableCell>
                     <TableCell className="text-white/80">Limited by mentor availability; cannot scale beyond small mentee loads</TableCell>
                   </TableRow>
+                  
                   <TableRow className="border-white/5">
                     <TableCell className="font-medium text-white">friend.tech</TableCell>
                     <TableCell className="text-white/80">Web3 SocialFi</TableCell>
@@ -83,6 +94,7 @@ const Comparison = () => {
                     <TableCell className="text-white/80">Keys trade on bonding curve; highly speculative market value</TableCell>
                     <TableCell className="text-white/80">Human influencer must engage; no guarantee of responses</TableCell>
                   </TableRow>
+                  
                   <TableRow className="border-white/5">
                     <TableCell className="font-medium text-white">Character.AI</TableCell>
                     <TableCell className="text-white/80">AI-native Consumer</TableCell>
@@ -91,6 +103,7 @@ const Comparison = () => {
                     <TableCell className="text-white/80">None (closed platform)</TableCell>
                     <TableCell className="text-white/80">No user monetization or ownership; content moderation limits</TableCell>
                   </TableRow>
+                  
                   <TableRow className="border-white/5">
                     <TableCell className="font-medium text-white">Delphi.ai</TableCell>
                     <TableCell className="text-white/80">AI Clone Platform</TableCell>

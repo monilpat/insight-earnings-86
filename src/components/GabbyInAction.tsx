@@ -46,6 +46,19 @@ const GabbyInAction = () => {
               </div>
             </CardContent>
           </Card>
+          
+          {/* Added market analysis card */}
+          <Card className="glass-card border-0 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <CardContent className="pt-6">
+              <div className="bg-gradient-to-r from-gabby-purple/20 to-gabby-gold/20 p-6 md:p-8 rounded-xl">
+                <p className="text-white text-lg md:text-xl font-medium leading-relaxed">
+                  Character.ai and Delphi alone rake in millions in monetized conversations with AIs in Web 2. 
+                  Friend.tech and time.fun facilitate millions in volume for monetized conversations in Web 3 but for humans, not AIs. 
+                  Gabby bridges the gap.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
