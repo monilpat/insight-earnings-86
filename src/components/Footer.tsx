@@ -17,6 +17,10 @@ const Footer = () => {
             </Link>
           </div>
           
+          <p className="text-sm text-white/50 mb-6 md:mb-0">
+            © 2025 $GABBY. All rights reserved.
+          </p>
+          
           <button 
             onClick={scrollToTop}
             className="w-10 h-10 rounded-full bg-gabby-purple/20 flex items-center justify-center hover:bg-gabby-purple/40 transition-colors"
@@ -24,12 +28,6 @@ const Footer = () => {
           >
             <ArrowUp className="h-5 w-5 text-white" />
           </button>
-        </div>
-        
-        <div className="mt-8 pt-8 border-t border-white/10 text-center">
-          <p className="text-sm text-white/50">
-            © {new Date().getFullYear()} $GABBY. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>
