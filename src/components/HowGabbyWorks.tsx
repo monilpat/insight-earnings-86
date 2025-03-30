@@ -29,7 +29,7 @@ const HowGabbyWorks = () => {
             <div className="relative flex justify-center">
               {/* Using placeholder image since the original image had loading issues */}
               <img 
-                src="/lovable-uploads/550a71f7-27b3-4cee-b5a2-6dc4ccc98386.png" 
+                src="/HowGabbyWorks.png" 
                 alt="How Gabby Works - Flow Diagram" 
                 className="w-full h-auto object-contain max-w-4xl"
               />
