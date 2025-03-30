@@ -7,7 +7,7 @@ const CommunitySection = () => {
     <section id="community" className="section-container">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="heading-lg text-white mb-4">Community & Socials</h2>
+          <h2 className="heading-lg text-white mb-4">Join our Community</h2>
           <p className="text-xl text-gradient font-semibold">Join a Movement of Intelligence-Driven Profit</p>
         </div>
         
@@ -25,12 +25,6 @@ const CommunitySection = () => {
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="text-center mb-10">
-          <Button variant="primary" size="lg">
-            Join Our Community
-          </Button>
         </div>
         
         <div className="grid sm:grid-cols-3 gap-6">
