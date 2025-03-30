@@ -1,11 +1,14 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Menu, X, ChevronRight, Download } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Button from './Button';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +22,13 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const scrollToCtaSection = () => {
+    const ctaSection = document.getElementById('join-launch');
+    if (ctaSection) {
+      ctaSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <header 
@@ -34,21 +44,41 @@ const Header = () => {
           <span className="text-xl font-display font-bold text-gradient">GABBY</span>
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/comparison" className="text-sm font-medium text-white/80 hover:text-white transition-colors">See how Gabby Compares</Link>
-          <a 
-            href="https://x.com/gabby_spiral" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="btn-primary text-sm"
-          >
-            <span className="flex items-center">
-              Follow on X
-              <ChevronRight className="ml-1 h-4 w-4" />
-            </span>
-          </a>
-        </nav>
+        {/* Desktop Navigation with Tabs */}
+        <div className="hidden md:flex items-center space-x-4">
+          <Tabs defaultValue={location.pathname === "/comparison" ? "comparison" : "home"} className="w-full">
+            <TabsList className="bg-transparent h-auto">
+              <Link to="/comparison">
+                <TabsTrigger 
+                  value="comparison" 
+                  className="data-[state=active]:bg-gabby-background/40 data-[state=active]:text-white text-white/80"
+                >
+                  Competitive Analysis
+                </TabsTrigger>
+              </Link>
+              <a href="https://docs.google.com/document/d/1g03fNEoXCUqKewYlLLMb3hGLXDezu-dRb0-xNewmixc/edit?tab=t.0" target="_blank" rel="noopener noreferrer">
+                <TabsTrigger 
+                  value="whitepaper" 
+                  className="data-[state=active]:bg-gabby-background/40 data-[state=active]:text-white text-white/80"
+                >
+                  White Paper
+                </TabsTrigger>
+              </a>
+              <Button variant="secondary" size="sm" onClick={scrollToCtaSection}>
+                Buy $GABBY
+              </Button>
+              <a 
+                href="https://x.com/gabby_spiral" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button variant="primary" size="sm" icon={true}>
+                  Follow on X
+                </Button>
+              </a>
+            </TabsList>
+          </Tabs>
+        </div>
 
         {/* Mobile Menu Button */}
         <button 
@@ -69,8 +99,26 @@ const Header = () => {
               className="block py-2 text-lg font-medium text-white/80 hover:text-white"
               onClick={() => setIsMenuOpen(false)}
             >
-              See how Gabby Compares
+              Competitive Analysis
             </Link>
+            <a 
+              href="https://docs.google.com/document/d/1g03fNEoXCUqKewYlLLMb3hGLXDezu-dRb0-xNewmixc/edit?tab=t.0" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="block py-2 text-lg font-medium text-white/80 hover:text-white"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              White Paper
+            </a>
+            <button 
+              onClick={() => {
+                scrollToCtaSection();
+                setIsMenuOpen(false);
+              }}
+              className="block py-2 text-lg font-medium text-white/80 hover:text-white w-full text-left"
+            >
+              Buy $GABBY
+            </button>
             <a 
               href="https://x.com/gabby_spiral" 
               target="_blank" 

@@ -35,22 +35,21 @@ const HowGabbyWorks = () => {
             }}></div>
           </div>
           
-          {/* Interactive elements - Modified card layout as requested */}
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Combined card for Free and Premium Q&A */}
-            <Card className="glass-card border-none animate-fade-in-up col-span-1 md:col-span-2" style={{ animationDelay: '0.2s' }}>
-              <CardContent className="p-6">
-                <h3 className="text-white font-medium text-lg mb-2">Question and Response</h3>
-                <p className="text-white/70">Start with basic conversations at no cost, or unlock deeper insights with premium queries</p>
-              </CardContent>
-            </Card>
-            
-            {/* Pay Human/AI card stays as is */}
-            <Card className="glass-card border-none animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-              <CardContent className="p-6">
-                <h3 className="text-white font-medium text-lg mb-2">Pay Human/AI for Guidance</h3>
-                <p className="text-white/70">Vetted experts and AI agents provide specialized knowledge</p>
-                <p className="text-gabby-gold/90 text-sm mt-2 font-medium">Payments occur in $GABBY (optionally swapped from USDC)</p>
+          {/* Interactive elements - Single card layout as requested */}
+          <div className="mt-8">
+            <Card className="glass-card border-none animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <CardContent className="p-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-white font-medium text-xl mb-3">Question and Response</h3>
+                    <p className="text-white/70 mb-2">Start with basic conversations at no cost, or unlock deeper insights with premium queries</p>
+                  </div>
+                  <div>
+                    <h3 className="text-white font-medium text-xl mb-3">Pay Human/AI for Expertise</h3>
+                    <p className="text-white/70 mb-4">Vetted experts and AI agents provide specialized expertise</p>
+                    <p className="text-gabby-gold/90 text-sm font-medium inline-block bg-gabby-gold/10 px-3 py-1 rounded-full">Payments occur in $GABBY (optionally swapped from USDC)</p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
