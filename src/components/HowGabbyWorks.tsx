@@ -15,7 +15,7 @@ const HowGabbyWorks = () => {
           <div className="bg-gabby-purple/10 p-6 rounded-xl animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <h3 className="text-white font-medium text-xl mb-3">Pay Human/AI for Expertise</h3>
             <p className="text-white/80 mb-4">
-              Start with basic conversations at no cost, or unlock deeper insights with premium queries with vetted experts and AI agents provide specialized expertise
+              Start with basic conversations at no cost, or unlock deeper insights with premium queries with vetted experts and AI agents for specialized expertise
             </p>
             <p className="text-gabby-gold/90 text-sm font-medium inline-block bg-gabby-gold/10 px-3 py-1 rounded-full">
               Payments occur in $GABBY (optionally swapped from USDC)
@@ -29,7 +29,7 @@ const HowGabbyWorks = () => {
             <div className="relative flex justify-center">
               {/* Using placeholder image since the original image had loading issues */}
               <img 
-                src="/lovable-uploads/91089426-7545-4c5f-b950-e2e0faefe78f.png" 
+                src="/lovable-uploads/550a71f7-27b3-4cee-b5a2-6dc4ccc98386.png" 
                 alt="How Gabby Works - Flow Diagram" 
                 className="w-full h-auto object-contain max-w-4xl"
               />
