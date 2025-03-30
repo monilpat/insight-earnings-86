@@ -13,7 +13,7 @@ const GabbyInAction = () => {
           }}>See how Gabby connects you with the best in class experts</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-0">
+        <div className="flex flex-col gap-12 px-4 md:px-0 max-w-4xl mx-auto">
           {/* Human Expert Card */}
           <Card className="glass-card border-0 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <CardHeader className="pb-2">
