@@ -61,7 +61,7 @@ const testimonials = [
     author: "Web3 Analyst"
   },
   {
-    text: "Finally, an AI that pays me to participate—game-changer!",
+    text: "Finally, an AI tailored for me.",
     author: "Early Adopter"
   }
 ];
