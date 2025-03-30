@@ -53,7 +53,7 @@ const Comparison = () => {
                   <TableRow className="bg-gradient-to-r from-gabby-purple/30 to-gabby-gold/20 border-b border-white/10">
                     <TableCell className="font-medium text-white">Gabby</TableCell>
                     <TableCell className="text-white/90">Web3 AI Platform</TableCell>
-                    <TableCell className="text-white/90">AI-powered conversations with virtual personas</TableCell>
+                    <TableCell className="text-white/90">AI-powered conversations with best in class humans and agents</TableCell>
                     <TableCell className="text-white/90">Pay-per-message; pay-per-task; staking rewards</TableCell>
                     <TableCell className="text-white/90">GABBY token with utility and governance rights</TableCell>
                     <TableCell className="text-white/90">Early stage of development; evolving AI capability</TableCell>
