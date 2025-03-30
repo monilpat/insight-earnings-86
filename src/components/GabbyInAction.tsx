@@ -51,12 +51,16 @@ const GabbyInAction = () => {
           <Card className="glass-card border-0 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <CardContent className="pt-6 pb-8">
               <div className="bg-gradient-to-r from-gabby-purple/20 to-gabby-gold/20 p-6 md:p-8 rounded-xl mb-6">
-                <p className="text-white text-lg md:text-xl font-medium leading-relaxed">
-                  <span className="text-gabby-gold font-semibold">Character.ai</span> and <span className="text-gabby-gold font-semibold">Delphi</span> alone rake in <span className="underline decoration-gabby-gold/70">millions</span> in monetized conversations with AIs in <span className="font-bold text-blue-400">Web 2</span>. 
-                  <br className="hidden md:block" />
-                  <span className="text-gabby-gold font-semibold">Friend.tech</span> and <span className="text-gabby-gold font-semibold">time.fun</span> facilitate <span className="underline decoration-gabby-gold/70">millions</span> in volume for monetized conversations in <span className="font-bold text-purple-400">Web 3</span> but for humans, not AIs.
-                  <br className="hidden md:block" />
-                  <span className="text-2xl font-bold mt-2 block text-gradient">Gabby bridges the gap.</span>
+                <p className="text-white text-lg md:text-2xl font-medium leading-relaxed">
+                  <span className="text-gabby-gold font-semibold">Character.ai</span> and <span className="text-gabby-gold font-semibold">Delphi</span> alone rake in 
+                  <span className="underline decoration-gabby-gold/70 px-1">millions</span> 
+                  in monetized conversations with AIs in <span className="font-bold text-blue-400">Web 2</span>.
+                  <br className="hidden md:block" /><br className="hidden sm:block" />
+                  <span className="text-gabby-gold font-semibold">Friend.tech</span> and <span className="text-gabby-gold font-semibold">time.fun</span> facilitate 
+                  <span className="underline decoration-gabby-gold/70 px-1">millions</span> 
+                  in monetized conversations with humans in <span className="font-bold text-purple-400">Web 3</span>.
+                  <br className="hidden md:block" /><br className="hidden sm:block" />
+                  <span className="text-3xl font-bold mt-4 block text-gradient bg-clip-text animate-pulse-subtle">Gabby bridges the gap.</span>
                 </p>
               </div>
               

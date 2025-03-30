@@ -4,7 +4,6 @@ import Footer from '@/components/Footer';
 import { 
   Table, 
   TableBody, 
-  TableCaption, 
   TableCell, 
   TableHead, 
   TableHeader, 
@@ -38,7 +37,6 @@ const Comparison = () => {
 
             <div className="overflow-x-auto mt-8 rounded-lg border border-white/10">
               <Table>
-                <TableCaption>Platform Comparison</TableCaption>
                 <TableHeader>
                   <TableRow className="bg-gabby-dark/40">
                     <TableHead className="text-white">Platform</TableHead>
