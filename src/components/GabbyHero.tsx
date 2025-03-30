@@ -27,7 +27,7 @@ const GabbyHero = () => {
             </div>
           </div>
           
-          {/* Text on the right */}
+          {/* Text on the right - Updated copy */}
           <div className="w-full md:w-3/5 text-left space-y-3 mt-6 md:mt-0">
             <h2 className={cn(
               "text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight",
@@ -40,7 +40,10 @@ const GabbyHero = () => {
                 has been spent on monetized AI-conversations in Web2.
               </span>
               <span className="block text-white/90 mt-1">
-                None of it reached Web3.
+                None curated with industry leaders: human or AI
+              </span>
+              <span className="block text-white/90 mt-1">
+                None on Web3.
               </span>
               <span className="block text-[#9b87f5] font-medium mt-2">
                 Until Gabby.

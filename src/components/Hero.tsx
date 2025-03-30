@@ -15,8 +15,8 @@ const Hero = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Main headline */}
-          <h1 className="heading-xl text-gradient animate-fade-in-up">Turn AI Conversations Into Profits with GABBY</h1>
+          {/* Main headline - Updated */}
+          <h1 className="heading-xl text-gradient animate-fade-in-up">Unlock Industry Leading Insights with Gabby</h1>
           
           {/* Updated copy */}
           <div className="mt-6 space-y-4 animate-fade-in-up" style={{
@@ -26,10 +26,10 @@ const Hero = () => {
               Talk to Gabby for free
             </p>
             <p className="text-xl md:text-2xl text-white/90 font-medium">
-              Pay Gabby for deeper insight
+              Pay Gabby for cutting edge human and AI insights
             </p>
             <p className="text-base text-white/70 italic">
-              She consults her network of vetted experts and AI agents on your behalf
+              from her network of vetted experts and AI agents
             </p>
           </div>
         </div>
