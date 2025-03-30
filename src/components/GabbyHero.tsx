@@ -12,18 +12,18 @@ const GabbyHero = () => {
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-6xl mx-auto">
-          {/* Image on the left */}
+          {/* Image on the left - now full length, not cropped in a circle */}
           <div className="w-full md:w-2/5 flex justify-center md:justify-start">
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/30 to-[#6D249C]/30 rounded-full blur-md opacity-70 group-hover:opacity-90 transition-all duration-700"></div>
-              <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-full border border-[#9b87f5]/30 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/30 to-[#6D249C]/30 rounded-md blur-md opacity-70 group-hover:opacity-90 transition-all duration-700"></div>
+              <div className="relative max-w-[280px] overflow-hidden rounded-md border border-[#9b87f5]/30">
                 <img
-                  src="/lovable-uploads/d12f0ad4-803b-40a9-a8d9-15e15c73d632.png"
+                  src="/lovable-uploads/79c8e5d2-cc87-4be1-a121-8aa25f493a7b.png"
                   alt="Gabby - AI Assistant"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-cover"
                 />
               </div>
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#9b87f5]/50 to-transparent rounded-full blur-sm opacity-50 group-hover:opacity-70 transition-all duration-700"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#9b87f5]/50 to-transparent rounded-md blur-sm opacity-50 group-hover:opacity-70 transition-all duration-700"></div>
             </div>
           </div>
           
@@ -37,7 +37,7 @@ const GabbyHero = () => {
                 A billion dollars
               </span>
               <span className="block text-white/90 mt-2">
-                has been spent on monetized conversations in Web2.
+                has been spent on monetized AI-conversations in Web2.
               </span>
               <span className="block text-white/90 mt-1">
                 None of it reached Web3.
