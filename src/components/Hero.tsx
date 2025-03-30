@@ -1,3 +1,4 @@
+
 import { ArrowRight } from 'lucide-react';
 import Button from './Button';
 
@@ -68,15 +69,7 @@ const Hero = () => {
             </a>
           </div>
           
-          {/* Scroll indicator */}
-          <div className="hidden md:block mt-16 animate-fade-in-up opacity-70" style={{
-          animationDelay: '0.4s'
-        }}>
-            <div className="flex flex-col items-center">
-              <span className="text-sm text-white/60 mb-2">Discover More</span>
-              <ArrowRight className="h-5 w-5 text-white/60 rotate-90 animate-float" />
-            </div>
-          </div>
+          {/* Scroll indicator section removed */}
         </div>
       </div>
     </section>;
