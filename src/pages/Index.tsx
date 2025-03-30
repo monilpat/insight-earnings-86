@@ -10,6 +10,7 @@ import GabbyHero from "../components/GabbyHero";
 import HowGabbyWorks from "../components/HowGabbyWorks";
 import GabbyInAction from "../components/GabbyInAction";
 import GabbyNetwork from "../components/GabbyNetwork";
+import Footer from "../components/Footer";
 
 export default function Index() {
   return (
@@ -26,6 +27,7 @@ export default function Index() {
         <TeamSection />
         <CommunitySection />
       </main>
+      <Footer />
     </div>
   );
 }
