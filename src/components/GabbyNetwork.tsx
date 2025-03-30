@@ -59,14 +59,9 @@ const GabbyNetwork = () => {
           </div>
         </div>
         
-        {/* Third image - Directory of experts full width */}
+        {/* Third image - Directory of experts full width - Header removed */}
         <div className="mt-12 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <div className="glass-card rounded-2xl p-6 md:p-8 overflow-hidden">
-            <div className="text-center mb-6">
-              <h3 className="text-xl font-medium text-white mb-3">Expert Directory</h3>
-              <p className="text-white/70">Access thousands of human and AI experts through Gabby's network</p>
-            </div>
-            
             <div className="relative flex items-center justify-center">
               {/* Background decorative elements */}
               <div className="absolute inset-0 bg-gradient-to-br from-gabby-purple/20 to-gabby-gold/20 z-0 rounded-lg blur-md"></div>
