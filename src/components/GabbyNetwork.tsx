@@ -14,7 +14,7 @@ const GabbyNetwork = () => {
         
         {/* Networks display */}
         <div className="grid md:grid-cols-2 gap-8 mt-12">
-          {/* Human Network */}
+          {/* Human Network - Updated text */}
           <div className="glass-card rounded-2xl p-6 md:p-8 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <div className="text-center mb-6">
               <h3 className="text-xl font-medium text-white mb-3">Human Expert Network</h3>
@@ -36,11 +36,11 @@ const GabbyNetwork = () => {
             </div>
           </div>
           
-          {/* AI Agent Network */}
+          {/* AI Agent Network - Updated text */}
           <div className="glass-card rounded-2xl p-6 md:p-8 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <div className="text-center mb-6">
               <h3 className="text-xl font-medium text-white mb-3">AI Agent Network</h3>
-              <p className="text-white/70">Cutting-edge AI models providing specialized knowledge</p>
+              <p className="text-white/70">Cutting-edge, specialized AI agents providing curated insights</p>
             </div>
             
             <div className="relative aspect-square flex items-center justify-center">
@@ -57,13 +57,6 @@ const GabbyNetwork = () => {
               <div className="absolute -inset-2 bg-gabby-gold/10 blur-2xl rounded-full z-0 opacity-50 animate-pulse-subtle" style={{ animationDelay: '1.5s' }}></div>
             </div>
           </div>
-        </div>
-        
-        {/* Additional information */}
-        <div className="mt-10 text-center">
-          <p className="text-white/80 text-lg max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            When you pay for premium insights, Gabby connects you with the perfect experts for your needs
-          </p>
         </div>
       </div>
     </section>

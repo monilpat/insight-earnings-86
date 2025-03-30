@@ -6,7 +6,7 @@ const HowGabbyWorks = () => {
   return (
     <section className="section-container bg-gabby-dark/20 py-20 md:py-28">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <h2 className="heading-lg text-white mb-4 animate-fade-in-up">How Gabby Works</h2>
           <p className="text-lg text-white/70 max-w-3xl mx-auto animate-fade-in-up" style={{
             animationDelay: '0.1s'
@@ -35,19 +35,19 @@ const HowGabbyWorks = () => {
             }}></div>
           </div>
           
-          {/* Interactive elements - Single card layout as requested */}
+          {/* Single Card with updated content */}
           <div className="mt-8">
             <Card className="glass-card border-none animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               <CardContent className="p-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-white font-medium text-xl mb-3">Question and Response</h3>
-                    <p className="text-white/70 mb-2">Start with basic conversations at no cost, or unlock deeper insights with premium queries</p>
-                  </div>
-                  <div>
+                <div className="grid grid-cols-1 gap-6">
+                  <div className="bg-gabby-purple/10 p-6 rounded-xl">
                     <h3 className="text-white font-medium text-xl mb-3">Pay Human/AI for Expertise</h3>
-                    <p className="text-white/70 mb-4">Vetted experts and AI agents provide specialized expertise</p>
-                    <p className="text-gabby-gold/90 text-sm font-medium inline-block bg-gabby-gold/10 px-3 py-1 rounded-full">Payments occur in $GABBY (optionally swapped from USDC)</p>
+                    <p className="text-white/80 mb-4">
+                      Start with basic conversations at no cost, or unlock deeper insights with premium queries with vetted experts and AI agents provide specialized expertise
+                    </p>
+                    <p className="text-gabby-gold/90 text-sm font-medium inline-block bg-gabby-gold/10 px-3 py-1 rounded-full">
+                      Payments occur in $GABBY (optionally swapped from USDC)
+                    </p>
                   </div>
                 </div>
               </CardContent>
