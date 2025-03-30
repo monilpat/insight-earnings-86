@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowDown } from "lucide-react";
 
 const GabbyInAction = () => {
   return (
@@ -18,13 +19,28 @@ const GabbyInAction = () => {
             </CardHeader>
             <CardContent>
               <p className="text-white/70 mb-4">Connect with vetted Human experts through Gabby's exclusive network</p>
-              <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
+              
+              {/* User Query */}
+              <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 mb-4">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
                 <img 
-                  src="/human-expert.gif" 
-                  alt="Human Expert Interaction"
+                  src="/lovable-uploads/a7a58fbb-f2f6-4d47-b2bb-6de403f91ded.png" 
+                  alt="Human Expert Query"
                   className="w-full h-auto relative z-10"
                 />
+              </div>
+              
+              {/* Arrow Down */}
+              <div className="flex justify-center my-3">
+                <ArrowDown className="h-8 w-8 text-gabby-gold animate-bounce" />
+              </div>
+              
+              {/* Expert Response - Placeholder for second image */}
+              <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
+                <div className="h-64 bg-gabby-dark/30 flex items-center justify-center">
+                  <p className="text-white/70 text-center">Expert response image will be added here</p>
+                </div>
               </div>
             </CardContent>
           </Card>
@@ -36,19 +52,67 @@ const GabbyInAction = () => {
             </CardHeader>
             <CardContent>
               <p className="text-white/70 mb-4">Leverage cutting-edge specialized AI Agents</p>
-              <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
+              
+              {/* User Query */}
+              <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 mb-4">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
                 <img 
-                  src="/ai-expert.gif" 
-                  alt="AI Expert Interaction"
+                  src="/lovable-uploads/7771d85a-903e-41cf-997c-955a21c4f079.png" 
+                  alt="AI Expert Query"
                   className="w-full h-auto relative z-10"
                 />
+              </div>
+              
+              {/* Arrow Down */}
+              <div className="flex justify-center my-3">
+                <ArrowDown className="h-8 w-8 text-gabby-gold animate-bounce" />
+              </div>
+              
+              {/* Expert Response - Placeholder for second image */}
+              <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
+                <div className="h-64 bg-gabby-dark/30 flex items-center justify-center">
+                  <p className="text-white/70 text-center">AI response image will be added here</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+          
+          {/* Free Option Card */}
+          <Card className="glass-card border-0 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <CardHeader className="pb-2">
+              <CardTitle className="text-2xl text-white">Free</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-white/70 mb-4">Experience Gabby without any subscription</p>
+              
+              {/* User Query */}
+              <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 mb-4">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
+                <img 
+                  src="/lovable-uploads/92a16b0a-0b95-4369-b6ea-0a953b77dc9f.png" 
+                  alt="Free Option Query"
+                  className="w-full h-auto relative z-10"
+                />
+              </div>
+              
+              {/* Arrow Down */}
+              <div className="flex justify-center my-3">
+                <ArrowDown className="h-8 w-8 text-gabby-gold animate-bounce" />
+              </div>
+              
+              {/* Response - Placeholder for second image */}
+              <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
+                <div className="h-64 bg-gabby-dark/30 flex items-center justify-center">
+                  <p className="text-white/70 text-center">Free option response image will be added here</p>
+                </div>
               </div>
             </CardContent>
           </Card>
           
           {/* Enhanced Market Analysis Card */}
-          <Card className="glass-card border-0 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+          <Card className="glass-card border-0 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
             <CardContent className="pt-6 pb-8">
               <div className="bg-gradient-to-r from-gabby-purple/20 to-gabby-gold/20 p-6 md:p-8 rounded-xl mb-6">
                 <p className="text-white text-lg md:text-2xl font-medium leading-relaxed">
@@ -62,14 +126,9 @@ const GabbyInAction = () => {
                   <br className="hidden md:block" /><br className="hidden sm:block" />
                 </p>
                 
-                {/* Enhanced "Gabby bridges the gap" text - Added more bottom padding */}
                 <div className="relative mt-6 py-4 px-2 mb-6">
-                  {/* Glow effect behind text */}
                   <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/30 to-[#F5AF19]/30 rounded-lg blur-xl"></div>
-                  
-                  {/* Animated border */}
                   <div className="absolute inset-0 border-2 border-gabby-gold/50 rounded-lg animate-pulse-subtle"></div>
-                  
                   <h3 className="text-4xl md:text-5xl font-bold text-center relative z-10 animate-gradient-shift bg-gradient-to-r from-gabby-gold via-[#9b87f5] to-gabby-gold bg-clip-text text-transparent bg-300% tracking-wide pb-2">
                     Gabby bridges the gap.
                   </h3>
