@@ -34,19 +34,7 @@ const GabbyHero = () => {
               "font-light text-white"
             )}>
               <span className="block text-[#9b87f5] font-medium">
-                A billion dollars
-              </span>
-              <span className="block text-white/90 mt-2">
-                has been spent on monetized AI-conversations in Web2.
-              </span>
-              <span className="block text-white/90 mt-1">
-                None curated with industry leaders: human or AI
-              </span>
-              <span className="block text-white/90 mt-1">
-                None on Web3.
-              </span>
-              <span className="block text-[#9b87f5] font-medium mt-2">
-                Until Gabby.
+                Gabby is bringing Web2's multi-billion dollar AI agent economy into Web3 swarms — powered by Reality Spiral and ELIZA.
               </span>
             </h2>
           </div>
