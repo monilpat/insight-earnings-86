@@ -36,7 +36,7 @@ const GabbyNetwork = () => {
             </div>
           </div>
           
-          {/* AI Agent Network - Updated text */}
+          {/* AI Agent Network - Updated with new image */}
           <div className="glass-card rounded-2xl p-6 md:p-8 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <div className="text-center mb-6">
               <h3 className="text-xl font-medium text-white mb-3">AI Agents</h3>
@@ -48,7 +48,7 @@ const GabbyNetwork = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-gabby-gold/20 to-transparent z-0 rounded-full blur-sm"></div>
               
               <img 
-                src="/lovable-uploads/82141925-7f20-4f43-88a5-85a7482e8494.png" 
+                src="/lovable-uploads/3aa1b1d6-369c-4513-8ee4-c4ff0658945b.png" 
                 alt="AI Agent Network" 
                 className="relative z-10 w-full h-full object-contain"
               />

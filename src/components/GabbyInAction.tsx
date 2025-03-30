@@ -35,12 +35,14 @@ const GabbyInAction = () => {
                 <ArrowDown className="h-8 w-8 text-gabby-gold animate-bounce" />
               </div>
               
-              {/* Expert Response - Placeholder for second image */}
+              {/* Expert Response - Updated with the provided image */}
               <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
-                <div className="h-64 bg-gabby-dark/30 flex items-center justify-center">
-                  <p className="text-white/70 text-center">Expert response image will be added here</p>
-                </div>
+                <img 
+                  src="/lovable-uploads/3a2c517e-debf-4633-8b38-6374436214a0.png" 
+                  alt="Human Expert Response"
+                  className="w-full h-auto relative z-10"
+                />
               </div>
             </CardContent>
           </Card>
@@ -68,12 +70,14 @@ const GabbyInAction = () => {
                 <ArrowDown className="h-8 w-8 text-gabby-gold animate-bounce" />
               </div>
               
-              {/* Expert Response - Placeholder for second image */}
+              {/* Expert Response - Updated with the provided image */}
               <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
-                <div className="h-64 bg-gabby-dark/30 flex items-center justify-center">
-                  <p className="text-white/70 text-center">AI response image will be added here</p>
-                </div>
+                <img 
+                  src="/lovable-uploads/2d58d94e-0fce-44d8-a47c-00e480da03e5.png" 
+                  alt="AI Expert Response"
+                  className="w-full h-auto relative z-10"
+                />
               </div>
             </CardContent>
           </Card>
@@ -105,7 +109,7 @@ const GabbyInAction = () => {
               <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
                 <img 
-                  src="/lovable-uploads/8c7a2857-ddef-48d7-860a-4a3420be0cf5.png" 
+                  src="/lovable-uploads/4ee12d73-42a6-4d3a-901c-1b8c1b9166ab.png" 
                   alt="Free Option Response"
                   className="w-full h-auto relative z-10"
                 />
