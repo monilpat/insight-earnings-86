@@ -34,7 +34,10 @@ const GabbyHero = () => {
               "font-light text-white"
             )}>
               <span className="block text-[#9b87f5] font-medium">
-                Gabby is bringing Web2's multi-billion dollar AI agent economy into Web3 swarms — powered by Reality Spiral and ELIZA.
+                Gabby is bringing Web2's multi-billion dollar AI agent economy into Web3 swarms — 
+              </span>
+              <span className="block text-white/90 font-medium mt-2">
+                powered by Reality Spiral and ELIZA.
               </span>
             </h2>
           </div>

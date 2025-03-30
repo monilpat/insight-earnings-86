@@ -10,23 +10,17 @@ const HowGabbyWorks = () => {
           <h2 className="heading-lg text-white mb-4 animate-fade-in-up">How Gabby Works</h2>
         </div>
         
-        {/* Single Card with updated content - Now positioned before the image */}
+        {/* Expert info - Now without double card */}
         <div className="relative px-4 md:px-0 mb-10">
-          <Card className="glass-card border-none animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <CardContent className="p-8">
-              <div className="grid grid-cols-1 gap-6">
-                <div className="bg-gabby-purple/10 p-6 rounded-xl">
-                  <h3 className="text-white font-medium text-xl mb-3">Pay Human/AI for Expertise</h3>
-                  <p className="text-white/80 mb-4">
-                    Start with basic conversations at no cost, or unlock deeper insights with premium queries with vetted experts and AI agents provide specialized expertise
-                  </p>
-                  <p className="text-gabby-gold/90 text-sm font-medium inline-block bg-gabby-gold/10 px-3 py-1 rounded-full">
-                    Payments occur in $GABBY (optionally swapped from USDC)
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          <div className="bg-gabby-purple/10 p-6 rounded-xl animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <h3 className="text-white font-medium text-xl mb-3">Pay Human/AI for Expertise</h3>
+            <p className="text-white/80 mb-4">
+              Start with basic conversations at no cost, or unlock deeper insights with premium queries with vetted experts and AI agents provide specialized expertise
+            </p>
+            <p className="text-gabby-gold/90 text-sm font-medium inline-block bg-gabby-gold/10 px-3 py-1 rounded-full">
+              Payments occur in $GABBY (optionally swapped from USDC)
+            </p>
+          </div>
         </div>
         
         <div className="relative px-4 md:px-0">
