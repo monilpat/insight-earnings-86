@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import FeatureSection from "../components/FeatureSection";
-import ProblemSection from "../components/ProblemSection";
 import CtaSection from "../components/CtaSection";
 import TeamSection from "../components/TeamSection";
 import FaqSection from "../components/FaqSection";
@@ -23,7 +22,6 @@ export default function Index() {
         <HowGabbyWorks />
         <GabbyNetwork />
         <FeatureSection />
-        <ProblemSection />
         <CtaSection />
         <TeamSection />
         <FaqSection />
