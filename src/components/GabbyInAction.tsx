@@ -101,12 +101,14 @@ const GabbyInAction = () => {
                 <ArrowDown className="h-8 w-8 text-gabby-gold animate-bounce" />
               </div>
               
-              {/* Response - Placeholder for second image */}
+              {/* Free Response - Updated with the provided image */}
               <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
-                <div className="h-64 bg-gabby-dark/30 flex items-center justify-center">
-                  <p className="text-white/70 text-center">Free option response image will be added here</p>
-                </div>
+                <img 
+                  src="/lovable-uploads/8c7a2857-ddef-48d7-860a-4a3420be0cf5.png" 
+                  alt="Free Option Response"
+                  className="w-full h-auto relative z-10"
+                />
               </div>
             </CardContent>
           </Card>
