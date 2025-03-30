@@ -10,6 +10,7 @@ import CommunitySection from "../components/CommunitySection";
 import ContactSection from "../components/ContactSection";
 import GabbyHero from "../components/GabbyHero";
 import HowGabbyWorks from "../components/HowGabbyWorks";
+import GabbyInAction from "../components/GabbyInAction";
 import GabbyNetwork from "../components/GabbyNetwork";
 
 export default function Index() {
@@ -20,6 +21,7 @@ export default function Index() {
         <GabbyHero />
         <Hero />
         <HowGabbyWorks />
+        <GabbyInAction />
         <GabbyNetwork />
         <FeatureSection />
         <CtaSection />
