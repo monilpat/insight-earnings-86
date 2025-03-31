@@ -11,7 +11,7 @@ import GabbyNetwork from "../components/GabbyNetwork";
 import Footer from "../components/Footer";
 import ProblemSection from "../components/ProblemSection";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, ArrowRight } from "lucide-react";
 
 export default function Index() {
   return (
@@ -48,111 +48,77 @@ export default function Index() {
           </div>
         </section>
         
-        {/* Cards from GabbyInAction placed directly in the Index component */}
+        {/* New consolidated interaction section */}
         <section className="section-container bg-gabby-dark/10 py-20">
           <div className="max-w-6xl mx-auto">
-            <div className="flex flex-col gap-12 px-4 md:px-0 max-w-4xl mx-auto">
-              {/* Human Expert Card */}
+            <div className="flex flex-col gap-16 px-4 md:px-0 max-w-5xl mx-auto">
+              {/* Combined Interactive Card */}
               <Card className="glass-card border-0 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                 <CardHeader className="pb-2">
-                  <CardTitle className="text-2xl text-white">Human Expert</CardTitle>
+                  <CardTitle className="text-2xl text-white">Choose your insights source</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-white/70 mb-4">Connect with vetted Human experts through Gabby's exclusive network</p>
+                  <p className="text-white/70 mb-6">Gabby connects you with different levels of insights based on your needs</p>
                   
-                  {/* User Query */}
-                  <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 mb-4">
+                  {/* Initial Query */}
+                  <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 mb-8">
                     <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
                     <img 
-                      src="/lovable-uploads/a7a58fbb-f2f6-4d47-b2bb-6de403f91ded.png" 
-                      alt="Human Expert Query"
+                      src="/lovable-uploads/1df7e8b6-e4a8-4b95-b593-9176fc9de991.png" 
+                      alt="Query Interface"
                       className="w-full h-auto relative z-10"
                     />
                   </div>
                   
-                  {/* Arrow Down */}
-                  <div className="flex justify-center my-3">
-                    <ArrowDown className="h-8 w-8 text-gabby-gold animate-bounce" />
-                  </div>
-                  
-                  {/* Expert Response - SWAPPED THIS IMAGE */}
-                  <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
-                    <img 
-                      src="/lovable-uploads/4ee12d73-42a6-4d3a-901c-1b8c1b9166ab.png" 
-                      alt="Human Expert Response"
-                      className="w-full h-auto relative z-10"
-                    />
-                  </div>
-                </CardContent>
-              </Card>
-              
-              {/* AI Expert Card */}
-              <Card className="glass-card border-0 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-                <CardHeader className="pb-2">
-                  <CardTitle className="text-2xl text-white">AI Expert</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-white/70 mb-4">Leverage cutting-edge specialized AI Agents</p>
-                  
-                  {/* User Query */}
-                  <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 mb-4">
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
-                    <img 
-                      src="/lovable-uploads/7771d85a-903e-41cf-997c-955a21c4f079.png" 
-                      alt="AI Expert Query"
-                      className="w-full h-auto relative z-10"
-                    />
-                  </div>
-                  
-                  {/* Arrow Down */}
-                  <div className="flex justify-center my-3">
-                    <ArrowDown className="h-8 w-8 text-gabby-gold animate-bounce" />
-                  </div>
-                  
-                  {/* Expert Response */}
-                  <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
-                    <img 
-                      src="/lovable-uploads/2d58d94e-0fce-44d8-a47c-00e480da03e5.png" 
-                      alt="AI Expert Response"
-                      className="w-full h-auto relative z-10"
-                    />
-                  </div>
-                </CardContent>
-              </Card>
-              
-              {/* Free Option Card - Updated text */}
-              <Card className="glass-card border-0 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-                <CardHeader className="pb-2">
-                  <CardTitle className="text-2xl text-white">Free</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-white/70 mb-4">Experience Gabby for high level insights</p>
-                  
-                  {/* User Query */}
-                  <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 mb-4">
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
-                    <img 
-                      src="/lovable-uploads/92a16b0a-0b95-4369-b6ea-0a953b77dc9f.png" 
-                      alt="Free Option Query"
-                      className="w-full h-auto relative z-10"
-                    />
-                  </div>
-                  
-                  {/* Arrow Down */}
-                  <div className="flex justify-center my-3">
-                    <ArrowDown className="h-8 w-8 text-gabby-gold animate-bounce" />
-                  </div>
-                  
-                  {/* Free Response - SWAPPED THIS IMAGE */}
-                  <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
-                    <img 
-                      src="/lovable-uploads/3a2c517e-debf-4633-8b38-6374436214a0.png" 
-                      alt="Free Option Response"
-                      className="w-full h-auto relative z-10"
-                    />
+                  {/* Three options section with arrows */}
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+                    {/* Human Expert Option */}
+                    <div className="flex flex-col items-center">
+                      <div className="mb-4 flex justify-center">
+                        <ArrowDown className="h-10 w-10 text-gabby-gold animate-bounce" />
+                      </div>
+                      <p className="text-xl text-gabby-gold font-semibold text-center mb-4">Human</p>
+                      <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 h-full">
+                        <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
+                        <img 
+                          src="/lovable-uploads/1271692c-1130-4a5d-a150-4837cc951fb7.png" 
+                          alt="Human Expert Response"
+                          className="w-full h-auto relative z-10"
+                        />
+                      </div>
+                    </div>
+                    
+                    {/* Free Option */}
+                    <div className="flex flex-col items-center">
+                      <div className="mb-4 flex justify-center">
+                        <ArrowDown className="h-10 w-10 text-gabby-gold animate-bounce" style={{ animationDelay: '0.2s' }} />
+                      </div>
+                      <p className="text-xl text-gabby-gold font-semibold text-center mb-4">Free</p>
+                      <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 h-full">
+                        <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
+                        <img 
+                          src="/lovable-uploads/f986288f-0d6d-4d57-a232-4f5eaa35ac58.png" 
+                          alt="Free Response"
+                          className="w-full h-auto relative z-10"
+                        />
+                      </div>
+                    </div>
+                    
+                    {/* AI Expert Option */}
+                    <div className="flex flex-col items-center">
+                      <div className="mb-4 flex justify-center">
+                        <ArrowDown className="h-10 w-10 text-gabby-gold animate-bounce" style={{ animationDelay: '0.4s' }} />
+                      </div>
+                      <p className="text-xl text-gabby-gold font-semibold text-center mb-4">AI Assistant</p>
+                      <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 h-full">
+                        <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
+                        <img 
+                          src="/lovable-uploads/8fe1c243-f606-4eda-8aaa-504d3352e0b9.png" 
+                          alt="AI Expert Response"
+                          className="w-full h-auto relative z-10"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
