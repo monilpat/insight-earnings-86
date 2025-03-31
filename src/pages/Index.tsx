@@ -60,8 +60,8 @@ export default function Index() {
                 <CardContent>
                   <p className="text-white/70 mb-6">Gabby connects you with different levels of insights based on your needs</p>
                   
-                  {/* Initial Query - Made smaller */}
-                  <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 mb-8 max-w-3xl mx-auto">
+                  {/* Initial Query - Made much smaller */}
+                  <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 mb-8 max-w-xl mx-auto">
                     <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
                     <img 
                       src="/lovable-uploads/1df7e8b6-e4a8-4b95-b593-9176fc9de991.png" 
@@ -70,15 +70,15 @@ export default function Index() {
                     />
                   </div>
                   
-                  {/* Three options section with arrows - Made larger */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mt-10">
+                  {/* Three options section with arrows - Made much larger */}
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 mt-10">
                     {/* Human Expert Option */}
                     <div className="flex flex-col items-center">
-                      <div className="mb-4 flex justify-center">
+                      <div className="mb-2 flex justify-center">
                         <ArrowDown className="h-10 w-10 text-gabby-gold animate-bounce" />
                       </div>
-                      <p className="text-xl text-gabby-gold font-semibold text-center mb-4">Human</p>
-                      <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 h-full">
+                      <p className="text-xl text-gabby-gold font-semibold text-center mb-2">Human</p>
+                      <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 w-full">
                         <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
                         <img 
                           src="/lovable-uploads/1271692c-1130-4a5d-a150-4837cc951fb7.png" 
@@ -90,11 +90,11 @@ export default function Index() {
                     
                     {/* Free Option */}
                     <div className="flex flex-col items-center">
-                      <div className="mb-4 flex justify-center">
+                      <div className="mb-2 flex justify-center">
                         <ArrowDown className="h-10 w-10 text-gabby-gold animate-bounce" style={{ animationDelay: '0.2s' }} />
                       </div>
-                      <p className="text-xl text-gabby-gold font-semibold text-center mb-4">Free</p>
-                      <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 h-full">
+                      <p className="text-xl text-gabby-gold font-semibold text-center mb-2">Free</p>
+                      <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 w-full">
                         <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
                         <img 
                           src="/lovable-uploads/f986288f-0d6d-4d57-a232-4f5eaa35ac58.png" 
@@ -106,11 +106,11 @@ export default function Index() {
                     
                     {/* AI Expert Option */}
                     <div className="flex flex-col items-center">
-                      <div className="mb-4 flex justify-center">
+                      <div className="mb-2 flex justify-center">
                         <ArrowDown className="h-10 w-10 text-gabby-gold animate-bounce" style={{ animationDelay: '0.4s' }} />
                       </div>
-                      <p className="text-xl text-gabby-gold font-semibold text-center mb-4">AI Assistant</p>
-                      <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 h-full">
+                      <p className="text-xl text-gabby-gold font-semibold text-center mb-2">AI Assistant</p>
+                      <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 w-full">
                         <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
                         <img 
                           src="/lovable-uploads/8fe1c243-f606-4eda-8aaa-504d3352e0b9.png" 
