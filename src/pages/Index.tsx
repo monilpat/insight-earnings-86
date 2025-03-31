@@ -60,8 +60,8 @@ export default function Index() {
                 <CardContent>
                   <p className="text-white/70 mb-6">Gabby connects you with different levels of insights based on your needs</p>
                   
-                  {/* Initial Query */}
-                  <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 mb-8">
+                  {/* Initial Query - Made smaller */}
+                  <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 mb-8 max-w-3xl mx-auto">
                     <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
                     <img 
                       src="/lovable-uploads/1df7e8b6-e4a8-4b95-b593-9176fc9de991.png" 
@@ -70,8 +70,8 @@ export default function Index() {
                     />
                   </div>
                   
-                  {/* Three options section with arrows */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+                  {/* Three options section with arrows - Made larger */}
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mt-10">
                     {/* Human Expert Option */}
                     <div className="flex flex-col items-center">
                       <div className="mb-4 flex justify-center">
