@@ -11,7 +11,7 @@ const TeamSection = () => {
           <div className="text-center mb-10">
             <h2 className="heading-md text-white mb-4">Built by Experts You Can Trust</h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              GABBY is built by Reality Spiral, core developer behind <strong className="text-white">Eliza V2</strong> and <strong className="text-white">Reality Spiral</strong>, known for successful AI + blockchain integrations. With a proven track record in building AI x Web3 tools, we're creating a future where AI conversations deliver <strong className="text-gradient">real value</strong>.
+              GABBY is built by Reality Spiral, core developer behind <strong className="text-white">Eliza V2</strong>, the canonical AI agent OS. With a proven track record in building AI x Web3 tools, we're creating a future where AI conversations deliver <strong className="text-gradient">real value</strong>.
             </p>
           </div>
           
