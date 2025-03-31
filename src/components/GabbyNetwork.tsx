@@ -12,9 +12,9 @@ const GabbyNetwork = () => {
           }}>Access to vetted humans and AI agents providing premium insights</p>
         </div>
         
-        {/* Networks display - First two networks side by side */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {/* Human Network - Updated image */}
+        {/* Networks display - Three networks in grid */}
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* Human Network */}
           <div className="glass-card rounded-2xl p-6 md:p-8 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <div className="text-center mb-6">
               <h3 className="text-xl font-medium text-white mb-3">Human Experts</h3>
@@ -36,7 +36,7 @@ const GabbyNetwork = () => {
             </div>
           </div>
           
-          {/* AI Agent Network - Updated with new image */}
+          {/* AI Agent Network */}
           <div className="glass-card rounded-2xl p-6 md:p-8 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <div className="text-center mb-6">
               <h3 className="text-xl font-medium text-white mb-3">AI Agents</h3>
@@ -57,23 +57,26 @@ const GabbyNetwork = () => {
               <div className="absolute -inset-2 bg-gabby-gold/10 blur-2xl rounded-full z-0 opacity-50 animate-pulse-subtle" style={{ animationDelay: '1.5s' }}></div>
             </div>
           </div>
-        </div>
-        
-        {/* Third image - Directory of experts full width - Header removed */}
-        <div className="mt-12 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-          <div className="glass-card rounded-2xl p-6 md:p-8 overflow-hidden">
-            <div className="relative flex items-center justify-center">
+          
+          {/* Expert Directory */}
+          <div className="glass-card rounded-2xl p-6 md:p-8 overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <div className="text-center mb-6">
+              <h3 className="text-xl font-medium text-white mb-3">Expert Directory</h3>
+              <p className="text-white/70">Thousands of vetted experts at your fingertips</p>
+            </div>
+            
+            <div className="relative aspect-square flex items-center justify-center">
               {/* Background decorative elements */}
-              <div className="absolute inset-0 bg-gradient-to-br from-gabby-purple/20 to-gabby-gold/20 z-0 rounded-lg blur-md"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-gabby-purple/20 to-gabby-gold/20 z-0 rounded-full blur-sm"></div>
               
               <img 
                 src="/lovable-uploads/feaead0b-587a-498b-8eed-3526fa5927e3.png" 
                 alt="Thousands of Human and AI Experts Directory" 
-                className="relative z-10 w-full max-w-3xl mx-auto h-auto object-contain"
+                className="relative z-10 w-full h-full object-contain"
               />
               
               {/* Subtle glow effect */}
-              <div className="absolute -inset-2 bg-gabby-purple/10 bg-gradient-to-r from-gabby-purple/10 to-gabby-gold/10 blur-2xl rounded-lg z-0 opacity-50 animate-pulse-subtle" style={{ animationDelay: '2s' }}></div>
+              <div className="absolute -inset-2 bg-gabby-purple/10 bg-gradient-to-r from-gabby-purple/10 to-gabby-gold/10 blur-2xl rounded-full z-0 opacity-50 animate-pulse-subtle" style={{ animationDelay: '2s' }}></div>
             </div>
           </div>
         </div>
