@@ -81,7 +81,7 @@ export default function Index() {
                       <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 w-full">
                         <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
                         <img 
-                          src="/lovable-uploads/1271692c-1130-4a5d-a150-4837cc951fb7.png" 
+                          src="/lovable-uploads/ed1eeda1-00b0-475a-87ec-e306fd3efd2b.png" 
                           alt="Human Expert Response"
                           className="w-full h-auto relative z-10"
                         />
@@ -113,7 +113,7 @@ export default function Index() {
                       <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20 w-full">
                         <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
                         <img 
-                          src="/lovable-uploads/8fe1c243-f606-4eda-8aaa-504d3352e0b9.png" 
+                          src="/lovable-uploads/644a796d-cd6d-400e-bff8-956aa05990ef.png" 
                           alt="AI Expert Response"
                           className="w-full h-auto relative z-10"
                         />
