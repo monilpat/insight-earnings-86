@@ -1,9 +1,7 @@
-
 import { AnimatePresence, motion } from 'framer-motion';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { ExternalLink } from 'lucide-react';
-
 const TeamSection = () => {
   return <section className="section-container">
       <div className="max-w-5xl mx-auto">
@@ -21,7 +19,7 @@ const TeamSection = () => {
                 <AvatarImage src="/lovable-uploads/b42d20aa-6112-43f5-a9a2-8ade203ba7fe.png" alt="Eliza AI" />
                 <AvatarFallback className="bg-gradient-to-br from-gabby-purple to-gabby-dark">E</AvatarFallback>
               </Avatar>
-              <h3 className="text-xl font-semibold text-white mb-1">Eliza</h3>
+              <h3 className="text-xl font-semibold text-white mb-1">elizaOS</h3>
               <p className="text-white/60 text-sm mb-4">Technology Platform</p>
               <div className="flex gap-3 mt-1">
                 <Button variant="link" size="sm" className="text-gabby-purple hover:text-gabby-gold" asChild>
@@ -62,5 +60,4 @@ const TeamSection = () => {
       </div>
     </section>;
 };
-
 export default TeamSection;
