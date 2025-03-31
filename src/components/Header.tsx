@@ -56,7 +56,7 @@ const Header = () => {
                   Research
                 </TabsTrigger>
               </Link>
-              <a href="/whitepaper.pdf" download="whitepaper.pdf">
+              <a href="/whitepaper.pdf" target="_blank" rel="noopener noreferrer">
                 <TabsTrigger 
                   value="whitepaper" 
                   className="data-[state=active]:bg-gabby-background/40 data-[state=active]:text-white text-white/80"
@@ -102,8 +102,9 @@ const Header = () => {
               Research
             </Link>
             <a 
-              href="/whitepaper.pdf" 
-              download="whitepaper.pdf" 
+              href="/whitepaper.pdf"
+              target="_blank" 
+              rel="noopener noreferrer"
               className="block py-2 text-lg font-medium text-white/80 hover:text-white"
               onClick={() => setIsMenuOpen(false)}
             >

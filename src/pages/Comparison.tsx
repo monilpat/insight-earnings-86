@@ -45,8 +45,9 @@ const Comparison = () => {
                     </div>
                   </div>
                   <a 
-                    href="/whitepaper.pdf" 
-                    download="whitepaper.pdf"
+                    href="/whitepaper.pdf"
+                    target="_blank" 
+                    rel="noopener noreferrer"
                     className="flex items-center"
                   >
                     <Button variant="primary" size="md" className="group">
