@@ -75,11 +75,11 @@ export default function Index() {
                     <ArrowDown className="h-8 w-8 text-gabby-gold animate-bounce" />
                   </div>
                   
-                  {/* Expert Response */}
+                  {/* Expert Response - SWAPPED THIS IMAGE */}
                   <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
                     <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
                     <img 
-                      src="/lovable-uploads/3a2c517e-debf-4633-8b38-6374436214a0.png" 
+                      src="/lovable-uploads/4ee12d73-42a6-4d3a-901c-1b8c1b9166ab.png" 
                       alt="Human Expert Response"
                       className="w-full h-auto relative z-10"
                     />
@@ -145,11 +145,11 @@ export default function Index() {
                     <ArrowDown className="h-8 w-8 text-gabby-gold animate-bounce" />
                   </div>
                   
-                  {/* Free Response */}
+                  {/* Free Response - SWAPPED THIS IMAGE */}
                   <div className="relative rounded-lg overflow-hidden border border-[#9b87f5]/30 shadow-lg shadow-[#6D249C]/20">
                     <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5]/10 to-[#6D249C]/10 blur-md"></div>
                     <img 
-                      src="/lovable-uploads/4ee12d73-42a6-4d3a-901c-1b8c1b9166ab.png" 
+                      src="/lovable-uploads/3a2c517e-debf-4633-8b38-6374436214a0.png" 
                       alt="Free Option Response"
                       className="w-full h-auto relative z-10"
                     />
