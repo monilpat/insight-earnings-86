@@ -1,3 +1,4 @@
+
 import { AnimatePresence, motion } from 'framer-motion';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
@@ -9,7 +10,7 @@ const TeamSection = () => {
           <div className="text-center mb-10">
             <h2 className="heading-md text-white mb-4">Built by Experts You Can Trust</h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              GABBY is built by Reality Spiral, core developer behind <strong className="text-white">Eliza V2</strong>, the canonical AI agent OS. With a proven track record in building AI x Web3 tools, we're creating a future where AI conversations deliver <strong className="text-gradient">real value</strong>.
+              GABBY is built by Reality Spiral, core developer behind <strong className="text-white">elizaOS v2</strong>, the canonical AI agent OS. With a proven track record in building AI x Web3 tools, we're creating a future where AI conversations deliver <strong className="text-gradient">real value</strong>.
             </p>
           </div>
           
